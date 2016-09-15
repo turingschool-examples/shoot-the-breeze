@@ -4,7 +4,7 @@
 
 ![Shoot The Breeze UI](http://frontend.turing.io/assets/images/projects/shoot-the-breeze/shoot-the-breeze-desktop-not-logged-in.jpg)
 
-![Shoot The Breeze UI](http://frontend.turing.io/assets/images/projects/shoot-the-breeze/shoot-the-breeze-desktop-mobile.jpg)
+![Shoot The Breeze UI](http://frontend.turing.io/assets/images/projects/shoot-the-breeze/shoot-the-breeze-mobile.jpg)
 
 ## Main goals
   - App must be broken out into a minimum of __ components
