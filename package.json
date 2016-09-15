@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --devtool",
     "build": "webpack",
-    "test": "mocha --compilers js:babel/register"
+    "test": "mocha --compilers js:babel-register --require test/helpers/setup.js --recursive"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "babel-register": "^6.14.0",
     "chai": "^3.5.0",
     "css-loader": "^0.25.0",
+    "enzyme": "^2.4.1",
     "escape-html": "^1.0.3",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
@@ -43,6 +44,7 @@
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.10.0",
     "react": "^15.3.1",
+    "react-addons-test-utils": "^15.3.1",
     "react-dom": "^15.3.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
