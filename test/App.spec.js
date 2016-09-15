@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, mount, render } from 'enzyme'
-import App from '../lib/components/App'
+import App from 'lib/components/App'
 import { expect } from 'chai'
 
 
