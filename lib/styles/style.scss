@@ -1,17 +1,4 @@
+@import 'reset';
 @import 'variables';
-
-$wtf: #ff0080;
-$ridiculous: cursive;
-
-body {
-  background: $wtf;
-}
-
-.hello-world {
-  font-family: $ridiculous;
-}
-
-#new-message--content {
-  height: 100px;
-  border: 1px dotted aliceblue;
-}
+@import 'header';
+@import 'sign-in';

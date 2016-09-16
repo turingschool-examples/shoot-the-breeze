@@ -1,7 +1,3 @@
-body {
-  background-color: yellow;
-}
-
 $color-main: #34495E;
 $color-base-dark: #95A5A5;
 $color-base-light: #ECF0F1;
@@ -15,11 +11,41 @@ $color-highliht-text: #A073B3;
 $color-base-input: #D8D8D8;
 
 $font-main: 'Fira Sans', sans-serif;
-$font-main-bold;
 
-// $up-icon: url(./public/img/up-arrow.svg) no-repeat;
-//
-// $down-icon: url(./public/img/down-arrow.svg) no-repeat;
+$up-icon: url(/public/img/up-arrow.svg) no-repeat;
+$down-icon: url(/public/img/down-arrow.svg) no-repeat;
+
+@mixin bookends() {
+  background-color: $color-main;
+  width: 100%;
+  font-family: $font-main;
+  height: 10vh;
+  color: white;
+}
+
+@mixin input-field() {
+  height: 4vh;
+  display: inline-block;
+  position: relative;
+  width: 40vw;
+  background-color: $color-base-input;
+  border: none;
+  border-radius: 2px;
+}
+
+@mixin header-main-sort-button($color, $img){
+  width: 70px;
+  height: 30px;
+  color: white;
+  font-family: $font-main;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  background: $img;
+  background-position: right;
+  background-color: $color;
+}
 
 @mixin font-main-bold() {
   font-family: $font-main;
