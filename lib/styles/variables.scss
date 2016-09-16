@@ -1,0 +1,27 @@
+body {
+  background-color: yellow;
+}
+
+$color-main: #34495E;
+$color-base-dark: #95A5A5;
+$color-base-light: #ECF0F1;
+
+$color-highlight-one: #3599DA;
+$color-highliht-two: #2DCC70;
+$color-highlight-three: #E74D3D;
+
+$color-highliht-text: #A073B3;
+
+$color-base-input: #D8D8D8;
+
+$font-main: 'Fira Sans', sans-serif;
+$font-main-bold;
+
+// $up-icon: url(./public/img/up-arrow.svg) no-repeat;
+//
+// $down-icon: url(./public/img/down-arrow.svg) no-repeat;
+
+@mixin font-main-bold() {
+  font-family: $font-main;
+  font-weight: bold;
+}
