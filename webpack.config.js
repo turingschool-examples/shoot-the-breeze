@@ -6,6 +6,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
     filename: '[name].bundle.js',
   },
   module: {
@@ -22,6 +23,7 @@ module.exports = {
       { test: /\.scss$/, loader: 'style!css!sass' },
     ],
   },
+  devtool: 'source-map',
   resolve: {
     extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
   },
