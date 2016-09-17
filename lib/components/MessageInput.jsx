@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { reference } from '../firebase';
 
 
@@ -26,11 +26,11 @@ export default class MessageInput extends Component {
 
   render() {
     return (
-      <form onSubmit{(e) => this.createMessage(e)}>
+      <form className="footer" onSubmit={(e) => this.createMessage(e)}>
         <input
           className='footer-message-input'
           type='text'
-          maxlength='140'
+          maxLength='140'
           placeholder='Message'
           value={this.state.message}
           onChange={e => this.setState({ message: e.target.value })}

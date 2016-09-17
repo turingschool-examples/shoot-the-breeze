@@ -1,6 +1,6 @@
 @import 'variables';
 
-footer {
+.footer {
   @include bookends();
   position: fixed;
   bottom: 0;
