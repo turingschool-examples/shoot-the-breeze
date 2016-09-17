@@ -3,8 +3,8 @@ import { reference } from '../firebase';
 
 
 export default class MessageInput extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       message: '',
       characterCount: 140,
@@ -20,8 +20,13 @@ export default class MessageInput extends Component {
     e.preventDefault();
 
     const { message } = this.state;
+    const user = this.props.user;
 
-    reference.push({ message });
+    reference.push({
+      user: user.displayName,
+      content: message,
+      createdAt: Date.now()
+    });
     this.setState({ message: '' });
   }
 
