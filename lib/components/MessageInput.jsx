@@ -12,7 +12,8 @@ export default class MessageInput extends Component {
   }
 
   characterCountDown() {
-    this.setState({ characterCount: (this.state.characterCount - this.state.message.val()) });
+    const characterRemaining = 140 - this.state.message.length;
+    return this.setState({ characterCount: characterRemaining }) ;
   }
 
   createMessage(e) {
@@ -34,6 +35,7 @@ export default class MessageInput extends Component {
           placeholder='Message'
           value={this.state.message}
           onChange={e => this.setState({ message: e.target.value })}
+          onKeyUp={() => this.characterCountDown()}
         />
         <p className='character-count'>{this.state.characterCount}</p>
         <input
