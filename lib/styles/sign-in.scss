@@ -1,0 +1,23 @@
+@import 'variables';
+
+.sign-in {
+  @include sign-in();
+}
+
+.sign-in-button {
+  @include button($color-highliht-two);
+  margin-top: 2vh;
+}
+
+.user-info {
+  @include sign-in();
+  font-family: $font-main;
+}
+
+.user-info-text-block {
+  margin-left: 3vw;
+  margin-top: 3vh;
+}
+.user-info p {
+  display: inline-block;
+}

@@ -1,0 +1,27 @@
+@import 'variables';
+
+main {
+  padding: 3vw;
+  padding-top: 13vh;
+  display: inline-block;
+  font-family: $font-main;
+}
+
+.message {
+  margin-top: 40px;
+}
+
+main article {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.time {
+  color: $color-highliht-text;
+}
+
+.message-autor {
+  color: $color-highlight-one;
+  @include font-main-bold();
+  margin-left: 1em;
+}

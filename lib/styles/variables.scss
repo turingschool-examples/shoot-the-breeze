@@ -1,0 +1,64 @@
+$color-main: #34495E;
+$color-base-dark: #95A5A5;
+$color-base-light: #ECF0F1;
+
+$color-highlight-one: #3599DA;
+$color-highliht-two: #2DCC70;
+$color-highlight-three: #E74D3D;
+
+$color-highliht-text: #A073B3;
+
+$color-base-input: #D8D8D8;
+
+$font-main: 'Fira Sans', sans-serif;
+
+$up-icon: url(/public/img/up-arrow.svg) no-repeat;
+$down-icon: url(/public/img/down-arrow.svg) no-repeat;
+
+@mixin bookends() {
+  background-color: $color-main;
+  width: 100%;
+  font-family: $font-main;
+  height: 10vh;
+  color: white;
+}
+
+@mixin input-field() {
+  height: 4vh;
+  display: inline-block;
+  position: relative;
+  background-color: $color-base-input;
+  border: none;
+  border-radius: 2px;
+}
+
+@mixin header-main-sort-button($color, $img){
+  background: $img;
+  @include button($color);
+}
+
+@mixin button($color){
+  width: 70px;
+  height: 30px;
+  color: white;
+  font-family: $font-main;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  background-position: right;
+  background-color: $color;
+}
+
+@mixin font-main-bold() {
+  font-family: $font-main;
+  font-weight: bold;
+}
+
+@mixin sign-in() {
+ background-color: $color-base-dark;
+ width: 100vw;
+ height: 8vh;
+ position: absolute;
+ bottom: 0;
+}

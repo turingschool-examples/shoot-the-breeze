@@ -1,0 +1,38 @@
+@import 'variables';
+
+header {
+  @include bookends();
+  position: absolute;
+}
+
+.header-main-title {
+  @include font-main-bold();
+  display: inline-block;
+  margin: 12px;
+  margin-top: 3.5vh;
+  font-size: .9em;
+}
+
+.header-nav-input {
+  @include input-field();
+  width: 40vw;
+}
+
+.header-main-sort-button-up {
+  position: relative;
+  float: right;
+
+  margin: 9px;
+  margin-top: 20px;
+
+  @include header-main-sort-button($color-highlight-one, $up-icon);
+}
+
+.header-main-sort-button-down {
+  position: relative;
+  float: right;
+
+  margin: 9px;
+  margin-top: 20px;
+  @include header-main-sort-button($color-highlight-one, $down-icon);
+}
