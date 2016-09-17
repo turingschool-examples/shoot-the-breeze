@@ -12,8 +12,7 @@ export default class MessageInput extends Component {
   }
 
   characterCountDown() {
-    const charactersLeft = this.state.characterCount - this.state.message.val();
-    this.setState = { characterCount: charactersLeft };
+    this.setState({ characterCount: (this.state.characterCount - this.state.message.val()) });
   }
 
   createMessage(e) {
@@ -27,7 +26,7 @@ export default class MessageInput extends Component {
 
   render() {
     return (
-      <form onSubmit={this.createMessage.bind(this)}>
+      <form onSubmit{(e) => this.createMessage(e)}>
         <input
           className='footer-message-input'
           type='text'
