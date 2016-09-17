@@ -43,6 +43,7 @@
     "lodash": "^4.15.0",
     "mocha": "^3.0.2",
     "mocha-loader": "^1.0.0",
+    "moment": "^2.15.0",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.10.0",
     "react": "^15.3.1",
