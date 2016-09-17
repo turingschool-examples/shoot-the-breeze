@@ -11,11 +11,11 @@ header {
   margin: 12px;
   margin-top: 3.5vh;
   font-size: .9em;
-
 }
 
 .header-nav-input {
   @include input-field();
+  width: 40vw;
 }
 
 .header-main-sort-button-up {
