@@ -1,0 +1,38 @@
+@import 'variables';
+
+.footer {
+  @include bookends();
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-message-input {
+  margin-left: 9px;
+  margin-top: 20px;
+  @include input-field();
+  width: 70vw;
+}
+
+.character-count {
+  margin-left: 3px;
+  display: inline-block;
+}
+
+.footer-submit-button {
+  position: relative;
+  float: right;
+
+  margin: 9px;
+  margin-top: 20px;
+
+  @include button($color-highliht-two);
+}
+
+.footer-clear-button {
+  position: relative;
+  float: right;
+
+  margin: 9px;
+  margin-top: 20px;
+  @include button ($color-highlight-three);
+}

@@ -1,0 +1,68 @@
+@import 'variables';
+
+@media (min-width: 0px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include bookends();
+    height: 20vh;
+  }
+
+  .header-main-title {
+    display: none;
+  }
+
+  .header-nav-input {
+    @include input-field();
+    width: 80vw;
+  }
+
+  .header-actions {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-main-sort-button-up {
+    position: relative;
+    float: right;
+
+    margin: 9px;
+    margin-top: 20px;
+
+    @include header-main-sort-button($color-highlight-one, $up-icon);
+  }
+
+  .header-main-sort-button-down {
+    position: relative;
+    float: right;
+
+    margin: 9px;
+    margin-top: 20px;
+    @include header-main-sort-button($color-highlight-one, $down-icon);
+  }
+
+}
+
+@media (min-width: 400px) {
+  header {
+    @include bookends();
+    position: absolute;
+  }
+
+
+  .header-main-title {
+    @include font-main-bold();
+    display: inline-block;
+    margin: 12px;
+    margin-top: 3.5vh;
+    font-size: .9em;
+  }
+
+  .header-nav-input {
+    width: 50vw;
+  }
+}

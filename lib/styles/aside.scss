@@ -1,0 +1,36 @@
+@import 'variables';
+
+  aside {
+    display: hidden;
+  }
+
+@media (min-width: 620px) {
+  aside {
+    padding: 3vw;
+    padding-top: 13vh;
+    float: right;
+    background: $color-base-light;
+    height: 100vh;
+    width: 30%;
+    font-family: $font-main;
+  }
+
+  .title-users {
+    @include font-main-bold();
+  }
+
+  aside p {
+    font-size: .6em;
+    display: inline-block;
+    margin-top: 3vh;
+  }
+
+  .current-active-user {
+    height: .5em;
+    width: .5em;
+    margin-left: 3px;
+    background-color: $color-highlight-three;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
