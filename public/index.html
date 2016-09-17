@@ -15,9 +15,50 @@
     <button class="header-main-sort-button-up">Sort</button>
   </header>
 
+  <main>
+    <section class="message">
+      <article class="message-date time">September 15,</article>
+      <article class="message-time time">3:15pm</article>
+      <article class="message-autor">Madison Kerndt</article>
+      <p class="message-content">I feel like we are really getting the hang of React</p>
+    </section>
+    <section class="message">
+      <article class="message-date">September 15</article>
+      <article class="message-time">3:15pm</article>
+      <article class="message-autor">Madison Kerndt</article>
+      <p class="message-content">I feel like we are really getting the hang of React</p>
+    </section>
+  </main>
+
+  <aside class="user-list">
+    <h2 class="title-users">Users</h2>
+    <ul class="list-users">
+      <li>
+        <p>Madison Kerndt</p>
+        <p>(madison.kerndt@gmail.com)</p>
+        <div class="current-active-user"></div>
+      </li>
+    </ul>
+  </aside>
+<!--
   <section class="sign-in">
     <button class="sign-in-button">Log in</button>
+  </section> -->
+
+  <section class='user-info'>
+    <article class="user-info-text-block">
+      <p>Logged in as</p>
+      <p>Madison</p>
+      <p>(madison.kerndt@gmail.com)</p>
+    </article>
   </section>
+
+  <footer>
+    <input class="footer-message-input" value="Message" type="text"></input>
+    <p class="character-count">140</p>
+    <button class="footer-submit-button">Submit</button>
+    <button class="footer-clear-button">Clear</button>
+  </footer>
 
   <div id="application"></div>
   <script src="main.bundle.js"></script>
