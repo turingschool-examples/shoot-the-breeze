@@ -34,7 +34,5 @@ header {
 
   margin: 9px;
   margin-top: 20px;
-  margin-right: 30px;
-
   @include header-main-sort-button($color-highlight-one, $down-icon);
 }
