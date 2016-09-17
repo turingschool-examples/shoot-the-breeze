@@ -34,6 +34,11 @@ $down-icon: url(/public/img/down-arrow.svg) no-repeat;
 }
 
 @mixin header-main-sort-button($color, $img){
+  background: $img;
+  @include button($color);
+}
+
+@mixin button($color){
   width: 70px;
   height: 30px;
   color: white;
@@ -42,7 +47,6 @@ $down-icon: url(/public/img/down-arrow.svg) no-repeat;
   border-radius: 2px;
   display: inline-block;
   position: relative;
-  background: $img;
   background-position: right;
   background-color: $color;
 }
@@ -50,4 +54,12 @@ $down-icon: url(/public/img/down-arrow.svg) no-repeat;
 @mixin font-main-bold() {
   font-family: $font-main;
   font-weight: bold;
+}
+
+@mixin sign-in() {
+ background-color: $color-base-dark;
+ width: 100vw;
+ height: 8vh;
+ position: absolute;
+ bottom: 0;
 }
