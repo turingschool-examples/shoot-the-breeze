@@ -1,0 +1,18 @@
+@import 'mixins';
+@import 'variables';
+
+.filter-input-field {
+  @include border-radius($message-input-border-radius);
+  height: 60%;
+  width: 44%;
+  border: none;
+}
+
+.sort-button {
+  @include message-input-button($sort-button-color);
+}
+
+.button-group {
+  width: 30vh;
+  height: 5vh;
+}

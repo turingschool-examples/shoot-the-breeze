@@ -21,7 +21,10 @@
   @include border-radius($message-input-border-radius);
   background-color: $color;
   color: white;
-  height: 60%;
-  width: 10%;
+  height: 100%;
+  width: 40%;
   border: none;
+  margin-left: 4px;
+  margin-right: 4px;
+  float: right;
 }
