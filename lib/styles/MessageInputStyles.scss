@@ -7,7 +7,7 @@
   height: 8vh;
   background-color: #95a5a6;
   color: white;
-  width: 99%;
+  // width: 99%;
   padding-left: 8px;
 }
 
@@ -24,7 +24,6 @@
   background-color: #34495e;
   color: white;
   height: 8vh;
-  width: 99%;
 }
 
 .message-input-field {
@@ -34,6 +33,7 @@
   border: none;
   font-size: 1em;
   background-color: $input-background-color;
+  padding-left: 6px;
 }
 
 .submit-button {

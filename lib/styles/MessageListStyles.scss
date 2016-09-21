@@ -7,3 +7,18 @@
   padding: 8px;
   overflow-y: scroll;
 }
+
+.list-container {
+  display: flex;
+  height: 76vh;
+}
+
+.MessageList {
+  height: 84vh;
+  z-index: -1;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
