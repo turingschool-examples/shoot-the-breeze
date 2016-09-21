@@ -1,0 +1,27 @@
+@mixin flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-box;
+}
+
+@mixin flex-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius:$radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin message-input-button($color) {
+  @include border-radius($message-input-border-radius);
+  background-color: $color;
+  color: white;
+  height: 60%;
+  width: 10%;
+  border: none;
+}

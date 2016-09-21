@@ -1,0 +1,21 @@
+@import 'mixins';
+@import 'variables';
+@import 'UserListStyles';
+@import 'MessageListStyles';
+@import 'MessageInputStyles';
+@import 'reset';
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+
+#application {
+  
+}
+
+body {
+  font-family: $font;
+}
+
+.lists-container {
+  @include flex;
+  justify-content: space-around;
+  width: 99%;
+}
