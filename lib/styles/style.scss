@@ -5,7 +5,7 @@
 @import 'MessageInputStyles';
 @import 'HeaderStyles';
 @import 'reset';
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700);
 
 #application {
 
@@ -19,4 +19,6 @@ body {
   @include flex;
   justify-content: space-around;
   width: 99%;
+  height: 76vh;
+  overflow-y: scroll;
 }
