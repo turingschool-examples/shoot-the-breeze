@@ -2,8 +2,7 @@
 
 /* Portrait and Landscape */
 @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px) {
+  and (max-width: 568px) {
     .user-list {
       display: none;
     }
@@ -11,7 +10,7 @@
       display: block;
       text-align: center;
       height: 24vh;
-      font-size: 3.5em;
+      font-size: 1.5em;
 
         .filter-input-field {
           border-radius: 14px;
@@ -68,13 +67,19 @@
           .list-container {
             display: flex;
             height: 53vh;
-            font-size: 3.5em;
+            font-size: 1.5em;
           }
           .message-list-ul {
             width: 89%;
             padding-left:  3vh;
             line-height: normal;
             overflow-y: scroll;
-        }
+          }
+          .short-date {
+            display: flex;
+          }
+          .long-date {
+            display: none;
+          }
     }
 }
