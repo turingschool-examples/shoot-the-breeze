@@ -1,11 +1,12 @@
+@import 'reset';
 @import 'mixins';
 @import 'variables';
 @import 'UserListStyles';
 @import 'MessageListStyles';
 @import 'MessageInputStyles';
 @import 'HeaderStyles';
-@import 'reset';
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700);
+@import 'mediaQueries';
 
 #application {
 
