@@ -1,6 +1,3 @@
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
 @media only screen
   and (max-width: 568px) {
     .user-list {
@@ -13,14 +10,12 @@
       font-size: 1.25em;
 
         .filter-input-field {
-          border-radius: 14px;
           height: 7vh;
           width: 84vw;
           padding-left: 3vh;
           margin: 3vh;
         }
         .message-input-field {
-          border-radius: 14px;
           height: 7vh;
           width: 65vw;
           padding-left: 3vh;
@@ -36,11 +31,9 @@
               margin-left: 6vw;
               margin-right: 1vh;
               float: none;
-              border-radius: 14px;
             }
             .l-button {
               float: none;
-              border-radius: 14px;
             }
         }
         .char-count {
