@@ -4,7 +4,7 @@
 .message-list-ul {
   width: 70%;
   line-height: normal;
-  padding: 8px;
+  padding-left: 3vw;
   overflow-y: scroll;
 }
 
@@ -18,7 +18,35 @@
   z-index: -1;
 }
 
-
 ::-webkit-scrollbar {
     display: none;
+}
+
+.short-date {
+  display: none;
+  color: $time-color;
+}
+
+.long-date {
+  display: inline;
+  color: $time-color;
+}
+
+.first-name {
+  display: inline;
+  margin-left: 2vh;
+  color: $sort-button-color;
+  font-weight: bold;
+}
+
+.sign-on-button {
+  border-radius: 4px;
+  height: 5vh;
+  width: 12vh;
+  margin-left: 2vw;
+    background-color: $submit-button-color;
+    color: white;
+    border: none;
+    float: right;
+    font-size: 1em;
 }

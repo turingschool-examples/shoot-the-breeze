@@ -1,0 +1,81 @@
+@media only screen
+  and (max-width: 568px) {
+    .user-list {
+      display: none;
+    }
+    .InputBlocks {
+      display: block;
+      text-align: center;
+      height: 24vh;
+      font-size: 1.25em;
+
+        .filter-input-field {
+          height: 7vh;
+          width: 84vw;
+          padding-left: 3vh;
+          margin: 3vh;
+        }
+        .message-input-field {
+          height: 7vh;
+          width: 65vw;
+          padding-left: 3vh;
+          margin: 3vh;
+          float: left;
+        }
+
+        .button-group {
+          width: 50vh;
+          height: 7vh;
+          margin: auto;
+            .r-button {
+              margin-left: 6vw;
+              margin-right: 1vh;
+              float: none;
+            }
+            .l-button {
+              float: none;
+            }
+        }
+        .char-count {
+          line-height: normal;
+          padding-top: 4vh;
+          text-align: left;
+          margin-left: 9vh;
+              .counter {
+                margin-left: 1.5vh;
+              }
+        }
+
+    }
+    .app-title {
+      display: none;
+    }
+
+    .login-block {
+      display: none;
+    }
+
+    .MessageList {
+      height: 77vh;
+          .list-container {
+            display: flex;
+            height: 53vh;
+            font-size: 1.25em;
+          }
+          .message-list-ul {
+            width: 89%;
+            padding-left:  3vh;
+            line-height: normal;
+            overflow-y: scroll;
+          }
+          .short-date {
+            display: inline;
+          }
+          .long-date {
+            display: none;
+          }
+          .first-name {
+            margin-left: 2vh;
+          }
+    }
+}
