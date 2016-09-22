@@ -14,8 +14,3 @@
 .sort-button {
   @include message-input-button($sort-button-color);
 }
-
-.button-group {
-  width: 30vh;
-  height: 5vh;
-}

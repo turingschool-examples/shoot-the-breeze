@@ -29,3 +29,111 @@
   float: right;
   font-size: 1em;
 }
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px) {
+    .user-list {
+      display: none;
+    }
+    .InputBlocks {
+      display: block;
+      text-align: center;
+      height: 24vh;
+      font-size: 3.5em;
+
+        .filter-input-field {
+          border-radius: 14px;
+          height: 7vh;
+          width: 84vw;
+          padding-left: 3vh;
+          margin: 3vh;
+        }
+        .message-input-field {
+          border-radius: 14px;
+          height: 7vh;
+          width: 65vw;
+          padding-left: 3vh;
+          margin: 3vh;
+          float: left;
+        }
+
+        .button-group {
+          width: 50vh;
+          height: 7vh;
+          margin: auto;
+            .r-button {
+              margin-left: 6vw;
+              margin-right: 1vh;
+              float: none;
+              border-radius: 14px;
+            }
+            .l-button {
+              float: none;
+              border-radius: 14px;
+            }
+        }
+        .char-count {
+          line-height: normal;
+          padding-top: 4vh;
+          text-align: left;
+          margin-left: 9vh;
+              .counter {
+                margin-left: 1.5vh;
+              }
+        }
+
+    }
+    .app-title {
+      display: none;
+    }
+
+    .login-block {
+      display: none;
+    }
+
+    .MessageList {
+      height: 77vh;
+          .list-container {
+            display: flex;
+            height: 53vh;
+            font-size: 3.5em;
+          }
+          .message-list-ul {
+            width: 89%;
+            line-height: normal;
+            padding-left: 56px;
+            overflow-y: scroll;
+        }
+    }
+
+
+}
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .user-list {
+      display: none;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .user-list {
+      display: none;
+    }
+}
