@@ -10,7 +10,7 @@
       display: block;
       text-align: center;
       height: 24vh;
-      font-size: 1.5em;
+      font-size: 1.25em;
 
         .filter-input-field {
           border-radius: 14px;
@@ -67,7 +67,7 @@
           .list-container {
             display: flex;
             height: 53vh;
-            font-size: 1.5em;
+            font-size: 1.25em;
           }
           .message-list-ul {
             width: 89%;
@@ -76,10 +76,14 @@
             overflow-y: scroll;
           }
           .short-date {
-            display: flex;
+            display: inline;
           }
           .long-date {
             display: none;
+          }
+          .first-name {
+            display: inline;
+            margin-left: 2vh;
           }
     }
 }

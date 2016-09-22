@@ -24,9 +24,9 @@
 
 .short-date {
   display: none;
-  color: #9b59b6;
+  color: $time-color;
 }
 .long-date {
   display: flex;
-  color: #9b59b6;
+  color: $time-color;
 }
