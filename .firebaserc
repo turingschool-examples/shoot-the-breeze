@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "shoot-the-breeze-b5e3f"
+    "default": "shoot-the-breeze-b5e3f",
+    "shoot-the-breeze-active": "shoot-the-breeze-b5e3f"
   }
 }
