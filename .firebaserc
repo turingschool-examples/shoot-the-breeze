@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": " shoot-the-breeze-1be68"
+    "default": " shoot-the-breeze-1be68",
+    "staging": "shoot-the-breeze-1be68"
   }
 }
