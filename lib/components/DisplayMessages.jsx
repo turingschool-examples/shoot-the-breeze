@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 
-const RenderMessages = ({messages})=>{
+const DisplayMessages = ({messages})=>{
     return(
     <ul>
       { messages.map(m =>{
@@ -13,4 +13,4 @@ const RenderMessages = ({messages})=>{
     );
 }
 
-module.exports = RenderMessages;
+module.exports = DisplayMessages;
