@@ -3,12 +3,13 @@ import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 
 const InputForm = ({draftedMessage, onDraftedMessageChange})=>{
-  return (
+  return (<div>
     <input
       placeholder="Message…"
       value={draftedMessage}
       onChange={onDraftedMessageChange}
     />
+    </div>
   );
 }
 
