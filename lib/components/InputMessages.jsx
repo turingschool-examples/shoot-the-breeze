@@ -4,5 +4,5 @@ import { pick, map, extend } from 'lodash';
 
 const CharacterCount = require('./CharacterCount')
 const Clear = require('./Clear')
-const Submit = require('.Submit')
+const Submit = require('./Submit')
 const LoginStatus = require('./LoginStatus');
