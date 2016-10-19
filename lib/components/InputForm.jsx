@@ -10,8 +10,10 @@ const InputForm = ({draftedMessage, onDraftedMessageChange, onMessageSubmit})=>{
         value={draftedMessage}
         onChange={onDraftedMessageChange}
       />
-      <button onClick={onMessageSubmit}>Add New Message</button>
-
+      <button
+        onClick={onMessageSubmit}>
+        Add New Message
+      </button>
     </div>
   );
 }
