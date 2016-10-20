@@ -21,6 +21,15 @@ body {
   color: $white;
 }
 
+.single-message{
+  margin: 30px;
+}
+
+.timestamp {
+  margin: 10px;
+}
+
+
 .submit-btn {
 
   position: relative;
@@ -101,6 +110,7 @@ body {
 
 .message-content {
   color: $dark-blue;
+  margin-left: 10px;
 }
 
 ::-webkit-input-placeholder {
