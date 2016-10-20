@@ -14,6 +14,23 @@ body {
   border: 1px dotted aliceblue;
 }
 
+.MessageInput {
+  display: inline-block;
+  margin: 5px;
+}
+
+.CharacterCounter {
+  display: inline-block;
+  padding: 5px;
+}
+
+.SubmitButton {
+  margin: 5px;
+}
+
+.ClearButton {
+  margin: 5px;
+}
 
 // colors
 // mixins
