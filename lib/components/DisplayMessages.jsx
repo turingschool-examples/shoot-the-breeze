@@ -8,7 +8,8 @@ const DisplayMessages = ({messages})=>{
         {messages.map(m =>{
           return (
             <li key={m.key}>
-              {m.user.displayName}: {m.content}
+              <span className = 'timestamp'>{m.createdAt}</span>   <span className = 'username'>{m.user.displayName}</span><br/>
+              <span className= 'message-content'>{m.content}</span>
             </li>
           );
         })

@@ -1,13 +1,109 @@
-$wtf: white;
-$ridiculous: cursive;
+@import 'reset.scss';
+@import 'variables.scss';
 
 body {
-  background: $wtf;
+  font-family: $main-text-family;
+  font-size: 18px;
 }
 
-.hello-world {
-  font-family: $ridiculous;
+.LoginStatus {
+  background-color: $dark-gray;
+  color: $white;
+  height: 53px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 28px;
+  font-weight: 200;
 }
+
+.LogIn-btn {
+  background-color: $green;
+  color: $white;
+}
+
+.submit-btn {
+  position: relative;
+  background-color: $green;
+  color: $white;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  left: 35px;
+  top: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.clear-btn {
+  position: relative;
+  background-color: $red;
+  color: white;
+  font-size: 16px;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  top: 10px;
+  left: 50px;
+  outline: none;
+}
+
+.user-display {
+  font-weight: bold;
+}
+
+.input-bar {
+  background-color: $dark-blue;
+  height: 53px;
+  position: relative;
+}
+
+#message-input {
+  position: relative;
+  background-color: $light-gray;
+  color: $dark-blue;
+  height: 30px;
+  width: 60vw;
+  border-radius: 5px;
+  left: 10px;
+  top: 10px;
+  border: none;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.timestamp {
+  color: $purple;
+}
+
+.username {
+  color: $medium-blue;
+  font-weight: bold;
+}
+
+.message-content {
+  color: $dark-blue;
+}
+
+::-webkit-input-placeholder {
+  color: $dark-blue;
+  font-size: 16px;
+
+}
+
+
+
+// $wtf: white;
+// $ridiculous: cursive;
+//
+// body {
+//   background: $wtf;
+// }
+//
+// .hello-world {
+//   font-family: $ridiculous;
+// }
 
 #new-message--content {
   height: 100px;
