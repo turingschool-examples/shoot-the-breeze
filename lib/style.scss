@@ -1,9 +1,6 @@
-$wtf: #ff0080;
-$ridiculous: cursive;
+@import "variables";
 
-body {
-  background: $wtf;
-}
+
 
 .hello-world {
   font-family: $ridiculous;
