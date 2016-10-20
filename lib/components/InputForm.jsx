@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 
+
 const InputForm = ({draftedMessage, onDraftedMessageChange, onMessageSubmit})=>{
   return (
     <div className = "input-bar">
