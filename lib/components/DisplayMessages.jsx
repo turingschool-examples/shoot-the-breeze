@@ -4,13 +4,17 @@ import { pick, map, extend } from 'lodash';
 
 const DisplayMessages = ({messages})=>{
     return(
-    <ul>
-      { messages.map(m =>{
-        return <li key={m.key}>{m.user.displayName}: {m.content}</li>
+      <ul>
+        {messages.map(m =>{
+          return (
+            <li key={m.key}>
+              {m.user.displayName}: {m.content}
+            </li>
+          );
         })
       }
-    </ul>
+      </ul>
     );
-}
+  }
 
 module.exports = DisplayMessages;
