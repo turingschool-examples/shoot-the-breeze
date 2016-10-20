@@ -4,15 +4,19 @@ import { pick, map, extend } from 'lodash';
 
 const InputForm = ({draftedMessage, onDraftedMessageChange, onMessageSubmit})=>{
   return (
-    <div>
-      <input
-        placeholder="Message…"
+    <div className = "input-bar">
+      <input id = "message-input"
+        placeholder="Message"
         value={draftedMessage}
         onChange={onDraftedMessageChange}
       />
-      <button
+      <button className= 'submit-btn'
         onClick={onMessageSubmit}>
-        Add New Message
+        Submit
+      </button>
+      <button className = 'clear-btn'>
+        {/* {onClick = {document.getElementById('message-input').value = ''}> */}
+        Clear
       </button>
     </div>
   );
