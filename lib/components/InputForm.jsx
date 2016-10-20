@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
+import { moment} from 'moment';
 
-
-const InputForm = ({draftedMessage, onDraftedMessageChange, onMessageSubmit})=>{
+const InputForm = ({draftedMessage, onDraftedMessageChange, onMessageSubmit, clearField})=>{
   return (
     <div className = "input-bar">
       <input id = "message-input"
@@ -11,16 +11,13 @@ const InputForm = ({draftedMessage, onDraftedMessageChange, onMessageSubmit})=>{
         value={draftedMessage}
         onChange={onDraftedMessageChange}
       />
-      <button className= 'submit-btn'
-        onClick={onMessageSubmit}>
-        Submit
-      </button>
-      <button className = 'clear-btn'>
-        {/* {onClick = {document.getElementById('message-input').value = ''}> */}
-        Clear
-      </button>
+      { draftedMessage ? <button className= 'submit-btn'
+        onClick={onMessageSubmit}>Submit</button> : document.getElementsByClassName("submit-btn").disabled = true }
+      { draftedMessage ? <button className = 'clear-btn'
+        onClick = {clearField}> Clear </button> : document.getElementsByClassName('clear-btn').disabled = true}
+
     </div>
-  );
+  )
 }
 
 module.exports = InputForm;

@@ -22,6 +22,7 @@ body {
 }
 
 .submit-btn {
+
   position: relative;
   background-color: $green;
   color: $white;
@@ -33,7 +34,16 @@ body {
   top: 10px;
   font-size: 16px;
   outline: none;
+  &:hover {
+    color: $green;
+    background-color: $white;
+  }
+  &:disabled {
+    background-color: $light-gray;
+  }
 }
+
+
 
 .clear-btn {
   position: relative;
@@ -47,6 +57,13 @@ body {
   top: 10px;
   left: 50px;
   outline: none;
+  &:hover {
+      color: $red;
+      background-color: $white;
+    }
+    &:disabled {
+      background-color: $light-gray;
+    }
 }
 
 .user-display {
