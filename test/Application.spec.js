@@ -21,7 +21,7 @@ describe('Unit Test | MessageInput', () => {
     const wrapper = shallow(<MessageInput />)
   });
   it('renders a "SubmitButton"', () => {
-    const wrapper = shallow(<MessageInput />)
+    const wrapper = mount(<MessageInput />)
     expect(wrapper.find('.SubmitButton')).to.have.length(1)
   });
   it('renders a "ClearButton"', () => {
