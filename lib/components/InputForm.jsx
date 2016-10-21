@@ -34,7 +34,7 @@ export default class InputForm extends Component {
           onChange={onDraftedMessageChange}
         />
 
-        <div>{140 - draftedMessage.length}</div>
+        <span className = 'character-count'>{140 - draftedMessage.length}</span>
 
         <button
           className= 'submit-btn'
@@ -45,6 +45,10 @@ export default class InputForm extends Component {
           className = 'clear-btn'
           disabled={disabledClear}
           onClick = {clearField}>Clear</button>
+
+
+
+
       </div>
     );
   }

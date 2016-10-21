@@ -39,7 +39,7 @@ body {
   width: 80px;
   border-radius: 5px;
   border: none;
-  left: 35px;
+  left: 65px;
   top: 10px;
   font-size: 16px;
   outline: none;
@@ -64,7 +64,7 @@ body {
   border-radius: 5px;
   border: none;
   top: 10px;
-  left: 50px;
+  left: 80px;
   outline: none;
   &:hover {
       color: $red;
@@ -117,6 +117,14 @@ body {
   color: $dark-blue;
   font-size: 16px;
 
+}
+
+.character-count {
+  color: $white;
+  font-family: $main-text-family;
+  position: absolute;
+  left: 905px;
+  top: 18px;
 }
 
 
