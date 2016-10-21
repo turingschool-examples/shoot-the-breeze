@@ -13,14 +13,19 @@ describe('Application', () => {
   });
 
   it('has a messages state that is an array', () => {
-    const wrapper = mount(<Application />);
+    const wrapper = shallow(<Application />);
     assert.deepEqual(wrapper.state().messages, []);
   });
 
   it('has a new message that is set to an empty string by default', () => {
-    const wrapper = mount(<Application />);
+    const wrapper = shallow(<Application />);
     assert.equal(wrapper.state().newMessage, '');
 
+  });
+
+  it('has a user that is set to an empty string by default', () => {
+    const wrapper = shallow(<Application />);
+    assert.equal(wrapper.state().user, '');
   });
 
 
