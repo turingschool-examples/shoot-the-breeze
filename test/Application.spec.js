@@ -12,4 +12,16 @@ describe('Application', () => {
     assert.equal(wrapper.type(), 'div');
   });
 
+  it('has a messages state that is an array', () => {
+    const wrapper = mount(<Application />);
+    assert.deepEqual(wrapper.state().messages, []);
+  });
+
+  it('has a new message that is set to an empty string by default', () => {
+    const wrapper = mount(<Application />);
+    assert.equal(wrapper.state().newMessage, '');
+
+  });
+
+
 });
