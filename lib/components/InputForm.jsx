@@ -25,6 +25,7 @@ export default class InputForm extends Component {
           value={draftedMessage}
           onChange={onDraftedMessageChange}
         />
+
         <div>{140 - draftedMessage.length}</div>
 
         <button className= 'submit-btn'
