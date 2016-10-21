@@ -10,7 +10,6 @@ export default class UserList extends Component {
     super()
     this.state = {
       users: [],
-      // user: null
     }
   }
 
