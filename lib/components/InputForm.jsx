@@ -4,7 +4,7 @@ import { pick, map, extend } from 'lodash';
 import { moment} from 'moment';
 
 export default class InputForm extends Component {
-  toggleSubmitBtn(draftedMessage) {
+  toggleDisabledBtn(draftedMessage) {
     if(draftedMessage.length > 0 && draftedMessage.length <= 140){
       return false;
     }else{
@@ -15,8 +15,7 @@ export default class InputForm extends Component {
   render(){
     const {draftedMessage, onDraftedMessageChange, onMessageSubmit, clearField, } = this.props;
 
-    const disabled = this.toggleSubmitBtn(draftedMessage);
-    console.log(disabled);
+    const disabled = this.toggleDisabledBtn(draftedMessage);
 
     return (
       <div className = "input-bar">
@@ -28,12 +27,15 @@ export default class InputForm extends Component {
 
         <div>{140 - draftedMessage.length}</div>
 
-        <button className= 'submit-btn'
-         disabled={disabled}
-         onClick={onMessageSubmit}>Submit</button>
+        <button
+          className= 'submit-btn'
+          disabled={disabled}
+          onClick={onMessageSubmit}>Submit</button>
 
-        { draftedMessage ? <button className = 'clear-btn'
-          onClick = {clearField}> Clear </button> : document.getElementsByClassName('clear-btn').disabled = true}
+        <button
+          className = 'clear-btn'
+          disabled={disabled}
+          onClick = {clearField}>Clear</button>
       </div>
     );
   }
