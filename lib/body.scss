@@ -7,10 +7,11 @@
 
 .message-output-container {
   display: inline-block;
-  width: 200px;
+  width: 300px;
 }
 
 .user-info-container {
   background-color: $light-gray;
   display: inline-block;
+  float: right;
 }
