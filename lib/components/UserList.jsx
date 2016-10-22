@@ -19,7 +19,7 @@ export default class UserList extends Component {
 
   render() {
     return(
-      <ul>
+      <ul className="user-list">
         { this.props.state.messages.uniq().map(m =>
         <li key={m.key}>{m.user.displayName} {user.email} </li>) }
       </ul>
