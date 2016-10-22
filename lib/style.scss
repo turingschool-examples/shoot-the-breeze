@@ -1,3 +1,11 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+//global styles
+html {
+  font-family: $standard-font;
+}
+
 .user-pic {
   height: 100px;
 }
