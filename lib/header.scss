@@ -7,11 +7,13 @@ header {
   background-color: $deep-blue;
   display: flex;
   height: 40px;
+  position: relative;
 
   #page-main-title {
     color: white;
     display: inline-block;
     font-size: $standard-font-size-header;
+    width: 100px;
   }
 
   #filter-input-field {
@@ -21,7 +23,15 @@ header {
     color: $deep-blue;
     font-size: $standard-font-size-header;
     height: 40px;
+    margin-left: 20px;
+    margin-right: 40px;
     width: 40%;
+  }
+
+  .buttons-container {
+    bottom: 10px;
+    right: 20px;
+    position: absolute;
   }
 
   .sort-up-button, .sort-down-button {
@@ -31,7 +41,7 @@ header {
     color: white;
     font-size: $standard-font-size-header;
     height: 40px;
-
+    margin: 0 5px;
   }
 
 } //end of header
