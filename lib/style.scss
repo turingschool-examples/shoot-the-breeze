@@ -1,9 +1,6 @@
-$wtf: #ff0080;
-$ridiculous: cursive;
+@import "variables";
 
-body {
-  background: $wtf;
-}
+
 
 .hello-world {
   font-family: $ridiculous;
@@ -13,3 +10,38 @@ body {
   height: 100px;
   border: 1px dotted aliceblue;
 }
+
+.MessageInput {
+  display: inline-block;
+  margin: 5px;
+}
+
+.CharacterCounter {
+  display: inline-block;
+  padding: 5px;
+}
+
+.header {
+  background-color: $headerBar;
+}
+.title{
+  display: inline-block;
+  padding: 0 25px;
+  color: white;
+  
+}
+
+.SubmitButton {
+  margin: 5px;
+}
+
+.ClearButton {
+  margin: 5px;
+}
+
+// colors
+// mixins
+// react-addons-test-utilsapp-temp
+// buttons
+// input-fields
+// typography
