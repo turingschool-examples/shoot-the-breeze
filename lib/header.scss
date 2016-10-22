@@ -3,4 +3,14 @@
 
 header {
   background-color: $header-blue-background;
+  height: 60px;
+
+  #page-main-title {
+    display: inline-block;
+  }
+
+  #filter-input-field {
+
+  }
+
 } //end of header
