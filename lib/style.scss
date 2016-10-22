@@ -1,15 +1,7 @@
-$wtf: #ff0080;
-$ridiculous: cursive;
-
-body {
-  background: $wtf;
-}
-
-.hello-world {
-  font-family: $ridiculous;
-}
-
-#new-message--content {
+.user-pic {
   height: 100px;
-  border: 1px dotted aliceblue;
+}
+
+.chat-card-img {
+  height: 50px;
 }

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "name of your specific firebase project goes here"
+    "default": "shoot-the-breeze-b5e3f",
+    "shoot-the-breeze-active": "shoot-the-breeze-b5e3f"
   }
 }
