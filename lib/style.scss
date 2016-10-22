@@ -21,15 +21,14 @@
   padding: 5px;
 }
 
-header {
+.header {
   background-color: $headerBar;
 }
-
-.title {
+.title{
   display: inline-block;
   padding: 0 25px;
-  color: white; 
- }
+  color: white;
+}
 
 .SubmitButton {
   margin: 5px;
