@@ -1,15 +1,10 @@
-$wtf: #ff0080;
-$ridiculous: cursive;
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "body.scss";
+@import "footer.scss";
 
-body {
-  background: $wtf;
-}
-
-.hello-world {
-  font-family: $ridiculous;
-}
-
-#new-message--content {
-  height: 100px;
-  border: 1px dotted aliceblue;
+//global styles
+html {
+  font-family: $standard-font;
 }

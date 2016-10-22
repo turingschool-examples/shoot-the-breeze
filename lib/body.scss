@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.body {
+  margin: 0 auto;
+  width: 960px;
+
+  .message-output-container {
+    display: inline-block;
+    height: 2000px;
+    overflow: auto;
+    width: 70%;
+
+    .each-message-card {
+
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+  } //end of message-output-container
+
+  .user-info-container {
+    background-color: $light-gray;
+    display: inline-block;
+    float: right;
+    height: 2000px;
+    width: 30%;
+  }
+
+} //end of body
