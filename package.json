@@ -54,6 +54,7 @@
     "webpack-dev-server": "^1.15.2"
   },
   "dependencies": {
+    "lodash.uniq": "^4.5.0",
     "moment": "^2.15.1"
   }
 }
