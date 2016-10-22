@@ -1,7 +1,10 @@
-.user-pic {
-  height: 100px;
-}
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "body.scss";
+@import "footer.scss";
 
-.chat-card-img {
-  height: 50px;
+//global styles
+html {
+  font-family: $standard-font;
 }
