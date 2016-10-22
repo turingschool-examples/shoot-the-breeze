@@ -4,7 +4,7 @@
 header {
   @include header-margins-and-padding;
   align-items: center;
-  background-color: $header-blue-background;
+  background-color: $deep-blue;
   display: flex;
   height: 60px;
 
@@ -14,7 +14,13 @@ header {
   }
 
   #filter-input-field {
-
+    background-color: $light-gray;
+    border: none;
+    border-radius: 5px;
+    color: $deep-blue;
+    font-size: 20px;
+    height: 60%;
+    width: 40%;
   }
 
 } //end of header
