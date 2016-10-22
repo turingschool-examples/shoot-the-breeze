@@ -7,15 +7,15 @@
     "test": "test"
   },
   "scripts": {
-    "start": "webpack-dev-server --devtool",
+    "start": "webpack-dev-server --devtool --hot --inline",
     "build": "webpack",
     "test": "mocha --compilers js:babel-register --require test/helpers/setup.js --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turingschool-examples/shoot-the-breeze.git"
+    "url": "git+https://github.com/gness1804/shoot-the-breeze"
   },
-  "author": "Turing School",
+  "author": "Gabrielle Procell and Graham Nessler",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/turingschool-examples/shoot-the-breeze/issues"
@@ -52,5 +52,8 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.2"
+  },
+  "dependencies": {
+    "moment": "^2.15.1"
   }
 }
