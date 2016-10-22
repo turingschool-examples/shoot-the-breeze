@@ -49,6 +49,7 @@ body {
   }
   &:disabled {
     background-color: $light-gray;
+    color: $white;
   }
 }
 
@@ -72,6 +73,7 @@ body {
     }
     &:disabled {
       background-color: $light-gray;
+      color: $white;
     }
 }
 
