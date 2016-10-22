@@ -1,9 +1,6 @@
-$wtf: #ff0080;
-$ridiculous: cursive;
+@import "variables";
 
-body {
-  background: $wtf;
-}
+
 
 .hello-world {
   font-family: $ridiculous;
@@ -14,6 +11,23 @@ body {
   border: 1px dotted aliceblue;
 }
 
+.MessageInput {
+  display: inline-block;
+  margin: 5px;
+}
+
+.CharacterCounter {
+  display: inline-block;
+  padding: 5px;
+}
+
+.SubmitButton {
+  margin: 5px;
+}
+
+.ClearButton {
+  margin: 5px;
+}
 
 // colors
 // mixins
