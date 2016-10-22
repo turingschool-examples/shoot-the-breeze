@@ -2,5 +2,15 @@
 @import "mixins.scss";
 
 .each-message-card {
-  
+  display: inline-block;
+}
+
+.message-output-container {
+  display: inline-block;
+  width: 200px;
+}
+
+.user-info-container {
+  background-color: $light-gray;
+  display: inline-block;
 }
