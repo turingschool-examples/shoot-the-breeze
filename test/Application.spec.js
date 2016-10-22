@@ -17,6 +17,11 @@ describe('Application', () => {
     assert.deepEqual(wrapper.state().messages, []);
   });
 
+  it('has a presentUsers state that is an array', () => {
+    const wrapper = shallow(<Application />);
+    assert.deepEqual(wrapper.state().presentUsers, []);
+  });
+
   it('has a new message that is set to an empty string by default', () => {
     const wrapper = shallow(<Application />);
     assert.equal(wrapper.state().newMessage, '');
