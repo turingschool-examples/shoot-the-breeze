@@ -7,11 +7,19 @@
 
 .message-output-container {
   display: inline-block;
+  height: 2000px;
+  overflow: auto;
   width: 300px;
-}
+
+  li {
+    list-style-type: none;
+  }
+
+} //end of message-output-container
 
 .user-info-container {
   background-color: $light-gray;
   display: inline-block;
   float: right;
+  height: 2000px;
 }
