@@ -6,21 +6,32 @@ header {
   align-items: center;
   background-color: $deep-blue;
   display: flex;
-  height: 60px;
+  height: 40px;
 
   #page-main-title {
     color: white;
     display: inline-block;
+    font-size: $standard-font-size-header;
   }
 
   #filter-input-field {
     background-color: $light-gray;
+    border-radius: 5px;
+    border: none;
+    color: $deep-blue;
+    font-size: $standard-font-size-header;
+    height: 40px;
+    width: 40%;
+  }
+
+  .sort-up-button, .sort-down-button {
+    background-color: $light-blue;
     border: none;
     border-radius: 5px;
-    color: $deep-blue;
-    font-size: 20px;
-    height: 60%;
-    width: 40%;
+    color: white;
+    font-size: $standard-font-size-header;
+    height: 40px;
+
   }
 
 } //end of header
