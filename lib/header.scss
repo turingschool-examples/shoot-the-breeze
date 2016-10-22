@@ -2,10 +2,14 @@
 @import "mixins.scss";
 
 header {
+  @include header-margins-and-padding;
+  align-items: center;
   background-color: $header-blue-background;
+  display: flex;
   height: 60px;
 
   #page-main-title {
+    color: white;
     display: inline-block;
   }
 
