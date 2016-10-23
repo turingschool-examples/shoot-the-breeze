@@ -18,13 +18,25 @@ describe('Application', () => {
   it('renders a message on the page on click of submit button',() =>{
     const wrapper = mount(<Application />);
     const input = wrapper.find('#message-input');
+    const submit = wrapper.find('.submit-btn');
 
     input.simulate('change', {target: {value: 'hello world'}});
-    wrapper.find('.submit-btn').simulate('click');
+    submit.simulate('click');
     setTimeout(() => {
       expect(wrapper.text()).to.equal('hello world');
     }, 1000);
   });
 
+  it('should clear the input field is clear is clicked', () =>{
+    const wrapper = mount(<Application />);
+    const input = wrapper.find('#message-input');
+    const clear = wrapper.find('.clear-btn');
+
+    input.simulate('change', {target: {value: 'hello world'}});
+    expect(wrapper.state('draftMessage')).to.equal('hello world');
+
+    clear.simulate('click');
+    expect(wrapper.state('draftMessage')).to.equal('');
+  });
 
 });
