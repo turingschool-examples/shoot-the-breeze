@@ -16,12 +16,14 @@ describe('Application', () => {
   });
 
   it('renders a message on the page on click of submit button',() =>{
-    const wrapper = mount(<InputForm />);
+    const wrapper = mount(<Application />);
     const input = wrapper.find('#message-input');
 
-    input.simulate('change', {targer: {value: 'hello world'}});
+    input.simulate('change', {target: {value: 'hello world'}});
     wrapper.find('.submit-btn').simulate('click');
-    expect(wrapper.text().to.equal('hello world'));
+    setTimeout(() => {
+      expect(wrapper.text()).to.equal('hello world');
+    }, 1000);
   });
 
 

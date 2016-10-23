@@ -2,26 +2,26 @@ import React, { Component } from 'react';
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 import moment from 'moment';
-//
+
 export default class FilterMessages extends Component {
-//
-//   filter(mesages){
-//     this.focus = this.focus.bind(this);
-//   }
-//
+  FilterMessages(filteredMessage){
+    if(filteredMessage.length > 0){
+      return this
+    }
+  }
+
   render(){
-//     const {user, messages} = this.props;
-//
-//     const focus =
-//       this.messages.filter();
-//     }
-//
+    const {filteredMessage} = this.props;
+
     return (
       <div className = "filter-bar">
         <span>Shoot the Breeze</span>
         <input id = "filter-input"
+          type = 'text'
           placeholder="Filter"
-//           onChange=this.focus
+          onChange={(e) => {
+            FilterMessages(e.target.value)}
+          }
         />
       </div>
     );
