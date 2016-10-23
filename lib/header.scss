@@ -39,3 +39,11 @@ header {
   } //end of sort-up-button and sort-down-button
 
 } //end of header
+
+@media screen and (max-width: 800px) { /* for smartphones and tablets */
+
+  header {
+    width: 100vw;
+  } //end of header
+
+} //end of media query
