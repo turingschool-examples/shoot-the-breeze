@@ -43,7 +43,32 @@ header {
 @media screen and (max-width: 800px) { /* for smartphones and tablets */
 
   header {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     width: 100vw;
+
+    #page-main-title {
+      display: block;
+      font-size: $mobile-font-size-header;
+      text-align: center;
+      width: auto;
+    }
+
+    #filter-input-field {
+      display: block;
+    }
+
+    .buttons-container {
+      display: block;
+      position: relative;
+    }
+
+    .sort-up-button, .sort-down-button {
+      position: relative;
+    }
+
   } //end of header
 
 } //end of media query
