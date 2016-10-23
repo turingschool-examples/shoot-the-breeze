@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { shallow, mount, render } from 'enzyme';
-import { assert } from 'chai';
+import { assert, expect } from 'chai';
+import moment from 'moment';
 
 import Application from '../lib/components/Application';
 

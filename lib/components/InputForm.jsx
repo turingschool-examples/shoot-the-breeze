@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
-import { moment} from 'moment';
+import moment from 'moment';
 
 export default class InputForm extends Component {
   toggleSubmitBtn(draftedMessage) {
@@ -20,7 +20,7 @@ export default class InputForm extends Component {
     }
 
   render(){
-    const {draftedMessage, onDraftedMessageChange, onMessageSubmit, clearField, } = this.props;
+    const {draftedMessage, onDraftedMessageChange, onMessageSubmit, clearField} = this.props;
 
     const disabledSubmit = this.toggleSubmitBtn(draftedMessage);
     const disabledClear = this.toggleClearBtn(draftedMessage);
