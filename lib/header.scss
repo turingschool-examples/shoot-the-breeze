@@ -59,12 +59,16 @@ header {
 
     #filter-input-field {
       display: block;
-      width: auto;
+      margin: 0 auto;
+      width: 80%;
     }
 
     .buttons-container {
+      bottom: 0;
       display: block;
+      margin: 20px 0;
       position: relative;
+      right: 0;
       width: auto;
     }
 
