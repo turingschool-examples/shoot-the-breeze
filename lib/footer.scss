@@ -19,12 +19,18 @@ footer {
   }
 
   .footer-bottom-component {
+    align-items: center;
     background-color: $deep-blue;
-    height: 40px;
+    display: flex;
+    height: 60px;
   }
 
   #character-counter-output {
     display: inline-block;
+  }
+
+  .logout-button {
+    @include button-standard;
   }
 
 } //end of footer
