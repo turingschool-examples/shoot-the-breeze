@@ -27,7 +27,7 @@ describe('Application', () => {
     }, 1000);
   });
 
-  it('should clear the input field is clear is clicked', () =>{
+  it('should clear the input field is clear is clicked', () => {
     const wrapper = mount(<Application />);
     const input = wrapper.find('#message-input');
     const clear = wrapper.find('.clear-btn');
@@ -39,4 +39,12 @@ describe('Application', () => {
     expect(wrapper.state('draftMessage')).to.equal('');
   });
 
+  it('should count the characters in the input field', () => {
+    const wrapper = mount(<Application />);
+    const input = wrapper.find('#message-input');
+    const characterCount = wrapper.find('.character-count');
+
+    input.simulate('change', {target: {value: 'h'}});
+    expect(characterCount.text()).to.equal('139');
+  });
 });

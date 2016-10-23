@@ -34,7 +34,10 @@ export default class InputForm extends Component {
           onChange={onDraftedMessageChange}
         />
 
-        <div>{140 - draftedMessage.length}</div>
+        <div
+          className = 'character-count'>
+          {140 - draftedMessage.length}
+        </div>
 
         <button
           className= 'submit-btn'
