@@ -9,7 +9,7 @@ header {
   height: 40px;
   margin: 0 auto;
   position: relative;
-  width: 960px;
+  width: $standard-element-width;
 
   #page-main-title {
     color: white;
@@ -20,15 +20,7 @@ header {
   }
 
   #filter-input-field {
-    background-color: $light-gray;
-    border-radius: 5px;
-    border: none;
-    color: $deep-blue;
-    font-size: $standard-font-size-header;
-    height: 40px;
-    margin-left: 20px;
-    margin-right: 40px;
-    width: 40%;
+    @include input-field;
   }
 
   .buttons-container {
@@ -38,13 +30,12 @@ header {
   }
 
   .sort-up-button, .sort-down-button {
-    background-color: $light-blue;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: $standard-font-size-header;
-    height: 40px;
-    margin: 0 5px;
-  }
+    @include button-standard;
+
+    &:hover{
+      @include button-standard-hover;
+    }
+
+  } //end of sort-up-button and sort-down-button
 
 } //end of header
