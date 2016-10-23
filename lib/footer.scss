@@ -4,4 +4,9 @@
 footer {
   margin: 0 auto;
   width: $standard-element-width;
+
+  .footer-top-component {
+    background-color: $dark-gray;
+  }
+
 } //end of footer
