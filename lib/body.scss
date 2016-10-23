@@ -3,7 +3,7 @@
 
 .body {
   margin: 0 auto;
-  width: 960px;
+  width: $standard-element-width;
 
   .message-output-container {
     display: inline-block;
@@ -11,8 +11,16 @@
     overflow: auto;
     width: 70%;
 
-    .each-message-card {
+    .each-message-date {
+      color: $light-purple;
+    }
 
+    .each-message-user-name {
+      color: $light-blue;
+    }
+
+    .each-message-body-text {
+      font-size: $message-text-font-size;
     }
 
     ul {
@@ -30,7 +38,23 @@
     display: inline-block;
     float: right;
     height: 2000px;
+    text-align: center;
     width: 30%;
-  }
+
+    h2 {
+      color: $deep-blue;
+      margin-left: 10px;
+    }
+
+    .users-present-button {
+      @include button-standard;
+
+      &:hover{
+        @include button-standard-hover;
+      }
+
+    } //end of users-present-button
+
+  } //end of user-info-container
 
 } //end of body

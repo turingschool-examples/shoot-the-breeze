@@ -2,5 +2,65 @@
 @import "mixins.scss";
 
 footer {
+  margin: 0 auto;
+  width: $standard-element-width;
 
-} //end of footer 
+  .footer-top-component {
+    align-items: center;
+    background-color: $dark-gray;
+    display: flex;
+    height: 40px;
+  }
+
+  .logged-in-as {
+    color: white;
+    font-size: $message-text-font-size;
+    margin-left: 10px;
+  }
+
+  .footer-bottom-component {
+    align-items: center;
+    background-color: $deep-blue;
+    display: flex;
+    height: 60px;
+  }
+
+  #character-counter-output {
+    color: white;
+    display: inline-block;
+  }
+
+  .logout-button, .submit-message-button, .clear-message-button {
+    @include button-standard;
+  }
+
+  .logout-button:hover {
+    @include button-standard-hover;
+  }
+
+  .submit-message-button {
+    background-color: $green;
+    margin: 0 20px;
+
+    &:hover {
+      background-color: rgb(124, 236, 145);
+    }
+
+  } //end of submit-message-button
+
+  .clear-message-button {
+    background-color: $red;
+    margin: 0 20px;
+
+    &:hover {
+      background-color: rgb(231, 120, 112);
+    }
+
+  } //end of clear-message-button
+
+  #message-entry-field {
+    @include input-field;
+    margin: 0 20px;
+  }
+
+} //end of footer
