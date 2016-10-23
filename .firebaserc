@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "name of your specific firebase project goes here"
+    "default": " shoot-the-breeze-1be68",
+    "staging": "shoot-the-breeze-1be68"
   }
 }
