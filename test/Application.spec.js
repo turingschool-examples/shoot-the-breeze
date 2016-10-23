@@ -61,4 +61,18 @@ describe('Application', () => {
       expect(wrapper.text()).to.equal('createdAt');
     }, 1000);
   });
+
+  it('should post messages with the username', () => {
+    const wrapper = mount(<Application />);
+    const input = wrapper.find('#message-input');
+    const username = wrapper.find('.username');
+    const submit = wrapper.find('.submit-btn');
+
+    input.simulate('change', {target: {value: 'hello world'}});
+    submit.simulate('click');
+
+    setTimeout(() => {
+      expect(wrapper.text()).to.equal('username');
+    });
+  });
 });
