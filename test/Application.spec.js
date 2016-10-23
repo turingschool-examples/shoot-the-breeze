@@ -47,4 +47,18 @@ describe('Application', () => {
     input.simulate('change', {target: {value: 'h'}});
     expect(characterCount.text()).to.equal('139');
   });
+
+  it('renders message to page with the correct date and time', () =>{
+    const wrapper = mount(<Application />);
+    const input = wrapper.find('#message-input');
+    const submit = wrapper.find('.submit-btn');
+    const createdAt = moment().format('MMMM Do, h:mm a');
+
+    input.simulate('change', {target: {value: 'hello world'}});
+    submit.simulate('click');
+
+    setTimeout(() => {
+      expect(wrapper.text()).to.equal('createdAt');
+    }, 1000);
+  });
 });
