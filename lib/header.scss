@@ -43,6 +43,7 @@ header {
 @media screen and (max-width: 800px) { /* for smartphones and tablets */
 
   header {
+    display: block;
     height: auto;
     margin: 0;
     padding: 0;
@@ -58,11 +59,13 @@ header {
 
     #filter-input-field {
       display: block;
+      width: auto;
     }
 
     .buttons-container {
       display: block;
       position: relative;
+      width: auto;
     }
 
     .sort-up-button, .sort-down-button {
