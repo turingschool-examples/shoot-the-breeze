@@ -35,13 +35,23 @@ footer {
     @include button-standard;
   }
 
-  .login-button:hover{
-    @include button-standard-hover;
-  }
+  .login-button {
+    background-color: $green;
 
-  .logout-button:hover {
-    @include button-standard-hover;
-  }
+    &:hover {
+      background-color: rgb(124, 236, 145);
+    }
+
+  } //end of login-button
+
+  .logout-button {
+    background-color: $red;
+
+    &:hover {
+      background-color: rgb(231, 120, 112);
+    }
+
+  } //end of logout-button
 
   .submit-message-button {
     background-color: $green;
