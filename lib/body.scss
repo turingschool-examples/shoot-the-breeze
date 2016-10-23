@@ -38,6 +38,7 @@
     display: inline-block;
     float: right;
     height: 2000px;
+    text-align: center;
     width: 30%;
 
     h2 {
@@ -47,7 +48,12 @@
 
     .users-present-button {
       @include button-standard;
-    }
+
+      &:hover{
+        @include button-standard-hover;
+      }
+
+    } //end of users-present-button
 
   } //end of user-info-container
 
