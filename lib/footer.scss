@@ -6,7 +6,10 @@ footer {
   width: $standard-element-width;
 
   .footer-top-component {
+    align-items: center;
     background-color: $dark-gray;
+    display: flex;
+    height: 40px;
   }
 
 } //end of footer
