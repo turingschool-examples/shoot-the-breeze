@@ -33,4 +33,8 @@ footer {
     @include button-standard;
   }
 
+  #message-entry-field {
+    @include input-field;
+  }
+
 } //end of footer

@@ -14,3 +14,15 @@
   height: 40px;
   margin: 0 5px;
 }
+
+@mixin input-field {
+  background-color: $light-gray;
+  border-radius: 5px;
+  border: none;
+  color: $deep-blue;
+  font-size: $standard-font-size-header;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 40px;
+  width: 40%;
+}
