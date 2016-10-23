@@ -1,4 +1,16 @@
+@import "variables.scss";
+
 @mixin header-margins-and-padding {
   margin: 10px auto;
   padding: 10px 0;
+}
+
+@mixin button-standard {
+  background-color: $light-blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: $standard-font-size-header;
+  height: 40px;
+  margin: 0 5px;
 }

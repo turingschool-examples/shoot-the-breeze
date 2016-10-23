@@ -19,7 +19,12 @@ footer {
   }
 
   .footer-bottom-component {
-    
+    background-color: $deep-blue;
+    height: 40px;
+  }
+
+  #character-counter-output {
+    display: inline-block;
   }
 
 } //end of footer

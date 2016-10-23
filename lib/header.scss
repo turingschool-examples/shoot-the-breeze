@@ -38,13 +38,7 @@ header {
   }
 
   .sort-up-button, .sort-down-button {
-    background-color: $light-blue;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: $standard-font-size-header;
-    height: 40px;
-    margin: 0 5px;
+    @include button-standard;
   }
 
 } //end of header
