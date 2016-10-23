@@ -10,6 +10,7 @@ footer {
     background-color: $dark-gray;
     display: flex;
     height: 40px;
+    padding: 10px 0;
   }
 
   .logged-in-as {
@@ -30,13 +31,27 @@ footer {
     display: inline-block;
   }
 
-  .logout-button, .submit-message-button, .clear-message-button {
+  .logout-button, .submit-message-button, .clear-message-button, .login-button {
     @include button-standard;
   }
 
-  .logout-button:hover {
-    @include button-standard-hover;
-  }
+  .login-button {
+    background-color: $green;
+
+    &:hover {
+      background-color: rgb(124, 236, 145);
+    }
+
+  } //end of login-button
+
+  .logout-button {
+    background-color: $red;
+
+    &:hover {
+      background-color: rgb(231, 120, 112);
+    }
+
+  } //end of logout-button
 
   .submit-message-button {
     background-color: $green;
