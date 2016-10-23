@@ -34,15 +34,29 @@ footer {
     @include button-standard;
   }
 
+  .logout-button:hover {
+    @include button-standard-hover;
+  }
+
   .submit-message-button {
     background-color: $green;
     margin: 0 20px;
-  }
+
+    &:hover {
+      background-color: rgb(124, 236, 145);
+    }
+
+  } //end of submit-message-button
 
   .clear-message-button {
     background-color: $red;
     margin: 0 20px;
-  }
+
+    &:hover {
+      background-color: rgb(231, 120, 112);
+    }
+
+  } //end of clear-message-button
 
   #message-entry-field {
     @include input-field;
