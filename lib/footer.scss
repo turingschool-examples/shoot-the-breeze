@@ -26,15 +26,27 @@ footer {
   }
 
   #character-counter-output {
+    color: white;
     display: inline-block;
   }
 
-  .logout-button {
+  .logout-button, .submit-message-button, .clear-message-button {
     @include button-standard;
+  }
+
+  .submit-message-button {
+    background-color: $green;
+    margin: 0 20px;
+  }
+
+  .clear-message-button {
+    background-color: $red;
+    margin: 0 20px;
   }
 
   #message-entry-field {
     @include input-field;
+    margin: 0 20px;
   }
 
 } //end of footer
