@@ -10,6 +10,7 @@ footer {
     background-color: $dark-gray;
     display: flex;
     height: 40px;
+    padding: 10px 0;
   }
 
   .logged-in-as {
@@ -30,8 +31,12 @@ footer {
     display: inline-block;
   }
 
-  .logout-button, .submit-message-button, .clear-message-button {
+  .logout-button, .submit-message-button, .clear-message-button, .login-button {
     @include button-standard;
+  }
+
+  .login-button:hover{
+    @include button-standard-hover;
   }
 
   .logout-button:hover {
