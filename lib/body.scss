@@ -58,3 +58,16 @@
   } //end of user-info-container
 
 } //end of body
+
+@media screen and (max-width: 800px) { /* for smartphones */
+
+  .body {
+    width: 100vw;
+
+    .user-info-container {
+      display: none;
+    }
+
+  } //end of body
+
+} //end of media query
