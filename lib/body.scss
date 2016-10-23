@@ -11,10 +11,6 @@
     overflow: auto;
     width: 70%;
 
-    .each-message-card {
-
-    }
-
     .each-message-date {
       color: $light-purple;
     }
@@ -47,6 +43,10 @@
     h2 {
       color: $deep-blue;
       margin-left: 10px;
+    }
+
+    .users-present-button {
+      @include button-standard;
     }
 
   } //end of user-info-container
