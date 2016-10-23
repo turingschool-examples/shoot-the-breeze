@@ -15,6 +15,15 @@ describe('Application', () => {
     assert.equal(wrapper.type(), 'section');
   });
 
+  it('should change the state the messages being drafted', () => {
+    const wrapper = mount(<Application />);
+    const input = wrapper.find('#message-input');
+
+    input.simulate('change', {target: {value: 'hello world'}});
+
+    expect(wrapper.state('draftMessage')).to.equal('hello world');
+  });
+
   it('renders a message on the page on click of submit button',() =>{
     const wrapper = mount(<Application />);
     const input = wrapper.find('#message-input');
