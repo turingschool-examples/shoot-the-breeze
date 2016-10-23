@@ -3,7 +3,7 @@
 
 .body {
   margin: 0 auto;
-  width: 960px;
+  width: $standard-element-width;
 
   .message-output-container {
     display: inline-block;
