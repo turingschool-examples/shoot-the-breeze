@@ -16,6 +16,10 @@
   margin: 0 5px;
 }
 
+@mixin button-standard-hover {
+  background-color: rgb(137, 202, 238);
+}
+
 @mixin input-field {
   background-color: $light-gray;
   border-radius: 5px;
