@@ -4,7 +4,7 @@ import { pick, map, extend } from 'lodash';
 
 const DisplayMessages = ({messages})=>{
     return(
-      <ul>
+      <ul className='message-field'>
         {messages.map(m =>{
           return (
             <li className='single-message' key={m.key}>

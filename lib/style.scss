@@ -6,6 +6,10 @@ body {
   font-size: 18px;
 }
 
+.Application {
+  width: 100vw;
+}
+
 .LoginStatus {
   background-color: $dark-gray;
   color: $white;
@@ -21,12 +25,24 @@ body {
   color: $white;
 }
 
+.message-field {
+  width: 70vw;
+  display: inline-block;
+}
+
 .single-message{
   margin: 30px;
 }
 
 .timestamp {
   margin: 10px;
+}
+
+.user-list {
+  background-color: $light-gray;
+  width: 30vw;
+  display: inline-block;
+  height: 100%;
 }
 
 
@@ -49,6 +65,7 @@ body {
   }
   &:disabled {
     background-color: $light-gray;
+    color: $white;
   }
 }
 
@@ -72,6 +89,7 @@ body {
     }
     &:disabled {
       background-color: $light-gray;
+      color: $white;
     }
 }
 
@@ -126,19 +144,6 @@ body {
   left: 905px;
   top: 18px;
 }
-
-
-
-// $wtf: white;
-// $ridiculous: cursive;
-//
-// body {
-//   background: $wtf;
-// }
-//
-// .hello-world {
-//   font-family: $ridiculous;
-// }
 
 #new-message--content {
   height: 100px;
