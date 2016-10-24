@@ -1,0 +1,120 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+footer {
+  margin: 0 auto;
+  width: $standard-element-width;
+
+  .footer-top-component {
+    align-items: center;
+    background-color: $dark-gray;
+    display: flex;
+    height: 40px;
+    padding: 10px 0;
+  }
+
+  .logged-in-as {
+    color: white;
+    font-size: $message-text-font-size;
+    margin-left: 10px;
+  }
+
+  .footer-bottom-component {
+    align-items: center;
+    background-color: $deep-blue;
+    display: flex;
+    height: 60px;
+  }
+
+  #character-counter-output {
+    color: white;
+    display: inline-block;
+  }
+
+  .buttons-container-footer {
+    margin-left: auto;
+  }
+
+  .logout-button, .submit-message-button, .clear-message-button, .login-button {
+    @include button-standard;
+  }
+
+  .login-button {
+    background-color: $green;
+
+    &:hover {
+      background-color: rgb(124, 236, 145);
+    }
+
+  } //end of login-button
+
+  .logout-button {
+    background-color: $red;
+    margin: 15px 10px;
+
+    &:hover {
+      background-color: rgb(231, 120, 112);
+    }
+
+  } //end of logout-button
+
+  .submit-message-button {
+    background-color: $green;
+
+    &:hover {
+      background-color: rgb(124, 236, 145);
+    }
+
+  } //end of submit-message-button
+
+  .clear-message-button {
+    background-color: $red;
+    margin: 0 10px;
+
+    &:hover {
+      background-color: rgb(231, 120, 112);
+    }
+
+  } //end of clear-message-button
+
+  #message-entry-field {
+    @include input-field;
+    margin: 0 20px;
+  }
+
+} //end of footer
+
+@media screen and (max-width: 800px) { /* for smartphones */
+
+  footer {
+    display: block;
+
+    .footer-top-component {
+      display: none;
+    }
+
+    .footer-bottom-component {
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100vw;
+    }
+
+    #message-entry-field {
+      width: 80%;
+    }
+
+    #character-counter-output {
+      display: block;
+    }
+
+    .submit-message-button, .clear-message-button {
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+  } //end of footer
+
+} //end of media query

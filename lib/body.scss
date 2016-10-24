@@ -1,0 +1,83 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.body {
+  margin: 0 auto;
+  width: $standard-element-width;
+
+  .message-output-container {
+    display: inline-block;
+    height: 2000px;
+    overflow: auto;
+    width: 70%;
+
+    .each-message-date {
+      color: $light-purple;
+    }
+
+    .each-message-user-name {
+      color: $light-blue;
+    }
+
+    .each-message-body-text {
+      font-size: $message-text-font-size;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+  } //end of message-output-container
+
+  .user-info-container {
+    background-color: $light-gray;
+    display: inline-block;
+    float: right;
+    height: 2000px;
+    text-align: center;
+    width: 30%;
+
+    h2 {
+      color: $deep-blue;
+      margin-left: 10px;
+    }
+
+    .users-present-button {
+      @include button-standard;
+      margin: 20px auto;
+
+      &:hover{
+        @include button-standard-hover;
+      }
+
+    } //end of users-present-button
+
+  } //end of user-info-container
+
+} //end of body
+
+@media screen and (max-width: 800px) { /* for smartphones */
+
+  .body {
+    width: 100vw;
+
+    .user-info-container {
+      display: none;
+    }
+
+    .message-output-container {
+      text-align: center;
+      width: 100vw;
+    }
+
+    .each-message-card {
+      text-align: left;
+    }
+
+  } //end of body
+
+} //end of media query
