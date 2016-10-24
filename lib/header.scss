@@ -23,7 +23,7 @@ header {
     @include input-field;
   }
 
-  .buttons-container {
+  .buttons-container-header {
     bottom: 10px;
     right: 20px;
     position: absolute;
@@ -39,3 +39,43 @@ header {
   } //end of sort-up-button and sort-down-button
 
 } //end of header
+
+@media screen and (max-width: 800px) { /* for smartphones and tablets */
+
+  header {
+    display: block;
+    height: 25vh;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 100vw;
+
+    #page-main-title {
+      display: block;
+      font-size: $mobile-font-size-header;
+      text-align: center;
+      width: auto;
+    }
+
+    #filter-input-field {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .buttons-container-header {
+      bottom: 0;
+      display: block;
+      margin: 20px 0;
+      position: relative;
+      right: 0;
+      width: auto;
+    }
+
+    .sort-up-button, .sort-down-button {
+      position: relative;
+    }
+
+  } //end of header
+
+} //end of media query

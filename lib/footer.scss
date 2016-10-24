@@ -31,6 +31,10 @@ footer {
     display: inline-block;
   }
 
+  .buttons-container-footer {
+    margin-left: auto;
+  }
+
   .logout-button, .submit-message-button, .clear-message-button, .login-button {
     @include button-standard;
   }
@@ -46,6 +50,7 @@ footer {
 
   .logout-button {
     background-color: $red;
+    margin: 15px 10px;
 
     &:hover {
       background-color: rgb(231, 120, 112);
@@ -55,7 +60,6 @@ footer {
 
   .submit-message-button {
     background-color: $green;
-    margin: 0 20px;
 
     &:hover {
       background-color: rgb(124, 236, 145);
@@ -65,7 +69,7 @@ footer {
 
   .clear-message-button {
     background-color: $red;
-    margin: 0 20px;
+    margin: 0 10px;
 
     &:hover {
       background-color: rgb(231, 120, 112);
@@ -79,3 +83,38 @@ footer {
   }
 
 } //end of footer
+
+@media screen and (max-width: 800px) { /* for smartphones */
+
+  footer {
+    display: block;
+
+    .footer-top-component {
+      display: none;
+    }
+
+    .footer-bottom-component {
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100vw;
+    }
+
+    #message-entry-field {
+      width: 80%;
+    }
+
+    #character-counter-output {
+      display: block;
+    }
+
+    .submit-message-button, .clear-message-button {
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+  } //end of footer
+
+} //end of media query

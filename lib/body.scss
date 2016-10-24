@@ -48,6 +48,7 @@
 
     .users-present-button {
       @include button-standard;
+      margin: 20px auto;
 
       &:hover{
         @include button-standard-hover;
@@ -58,3 +59,25 @@
   } //end of user-info-container
 
 } //end of body
+
+@media screen and (max-width: 800px) { /* for smartphones */
+
+  .body {
+    width: 100vw;
+
+    .user-info-container {
+      display: none;
+    }
+
+    .message-output-container {
+      text-align: center;
+      width: 100vw;
+    }
+
+    .each-message-card {
+      text-align: left;
+    }
+
+  } //end of body
+
+} //end of media query
