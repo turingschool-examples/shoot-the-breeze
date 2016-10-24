@@ -6,15 +6,14 @@ var _ = require('lodash');
 
 export default class FilterMessages extends Component {
   render(){
-    const {filteredMessage} = this.props;
+    const {onFilterChange} = this.props;
 
     return (
       <div className = "filter-bar">
         <span className = 'title'>Shoot the Breeze</span>
-
         <input id = "filter-input"
           placeholder="Filter"
-          onChange={filteredMessage}
+          onChange={onFilterChange}
         />
       </div>
     );

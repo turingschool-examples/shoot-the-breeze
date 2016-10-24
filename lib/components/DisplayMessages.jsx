@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 
-const DisplayMessages = ({messages, filteredMessage})=>{
+const DisplayMessages = ({messages, filteredMessages})=>{
 
-  // ShowFilteredMessages(){
+  // ToggleDisplayMessages(){
   //   if(this.props.filteredMessage > 0){
-  //     return filteredMessages;
+  //     return this.props.filteredMessages
   //   }else{
-  //     return messages;
+  //     return this.props.messages
   //   }
   // }
 
