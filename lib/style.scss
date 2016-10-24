@@ -9,6 +9,10 @@ html {
   font-family: $standard-font;
 }
 
+.hidden {
+  display: none;
+}
+
 //styles for placeholders in input fields
 //from http://codepen.io/htmlcolorcodes/pen/xwKaNj
 ::-webkit-input-placeholder { /* Chrome */
