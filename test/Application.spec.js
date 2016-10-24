@@ -46,6 +46,7 @@ describe('Application', () => {
   it.skip('has a function called clearInputField() that clears the input field', () => {
     const wrapper = mount(<Application />);
 
+
     wrapper.clearInputField();
     assert.equal(wrapper.state().newMessage, '');
   });
