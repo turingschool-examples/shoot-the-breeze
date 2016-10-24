@@ -13,7 +13,7 @@ export default class FilterMessages extends Component {
         <span className = 'title'>Shoot the Breeze</span>
         <input id = "filter-input"
           placeholder="Filter"
-          onChange={onFilterChange}
+          onChange={(e) =>{onFilterChange(e.target.value)}}
         />
       </div>
     );
