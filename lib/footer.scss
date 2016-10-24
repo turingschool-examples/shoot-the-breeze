@@ -84,11 +84,6 @@ footer {
 
   footer {
     display: block;
-    // height: auto;
-    // margin: 0;
-    // padding: 0;
-    // text-align: center;
-    // width: 100vw;
 
     .footer-top-component {
       display: none;
@@ -101,6 +96,14 @@ footer {
       padding: 0;
       text-align: center;
       width: 100vw;
+    }
+
+    #message-entry-field {
+      width: 80%;
+    }
+
+    #character-counter-output {
+      display: block;
     }
 
   } //end of footer
