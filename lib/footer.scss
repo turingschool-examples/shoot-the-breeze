@@ -50,7 +50,7 @@ footer {
 
   .logout-button {
     background-color: $red;
-    margin: 15px 0;
+    margin: 15px 10px;
 
     &:hover {
       background-color: rgb(231, 120, 112);
@@ -60,7 +60,6 @@ footer {
 
   .submit-message-button {
     background-color: $green;
-    margin-bottom: 15px;
 
     &:hover {
       background-color: rgb(124, 236, 145);
@@ -70,6 +69,7 @@ footer {
 
   .clear-message-button {
     background-color: $red;
+    margin: 0 10px;
 
     &:hover {
       background-color: rgb(231, 120, 112);
@@ -112,6 +112,7 @@ footer {
 
     .submit-message-button, .clear-message-button {
       display: inline-block;
+      margin-bottom: 15px;
     }
 
   } //end of footer
