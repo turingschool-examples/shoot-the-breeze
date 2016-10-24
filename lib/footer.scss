@@ -31,6 +31,10 @@ footer {
     display: inline-block;
   }
 
+  .buttons-container-footer { 
+    margin-left: auto;
+  }
+
   .logout-button, .submit-message-button, .clear-message-button, .login-button {
     @include button-standard;
   }
@@ -55,7 +59,6 @@ footer {
 
   .submit-message-button {
     background-color: $green;
-    margin: 0 20px;
 
     &:hover {
       background-color: rgb(124, 236, 145);
@@ -65,7 +68,6 @@ footer {
 
   .clear-message-button {
     background-color: $red;
-    margin: 0 20px;
 
     &:hover {
       background-color: rgb(231, 120, 112);
