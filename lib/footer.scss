@@ -84,14 +84,23 @@ footer {
 
   footer {
     display: block;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100vw;
+    // height: auto;
+    // margin: 0;
+    // padding: 0;
+    // text-align: center;
+    // width: 100vw;
 
     .footer-top-component {
       display: none;
+    }
+
+    .footer-bottom-component {
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100vw;
     }
 
   } //end of footer
