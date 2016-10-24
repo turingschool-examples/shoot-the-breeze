@@ -6,16 +6,12 @@
   font-size: 18px;
 }
 
-// .Application {
-//   width: 100vw;
-// }
-
 .input-bar, .filter-bar {
   background-color: $color-header-footer-bar;
   height: 53px;
 }
 
-.submit-btn, .clear-btn{
+.submit-btn, .clear-btn, .LogIn-btn{
   position: relative;
   color: $white;
   border-radius: 5px;
@@ -31,8 +27,9 @@
     }
   }
 
-.submit-btn{
+.submit-btn, .LogIn-btn{
   background-color: $color-submit-btn;
+  margin-right: 10px;
   &:hover {
     color: $green;
     background-color: $white;
@@ -56,123 +53,71 @@
     background-color: $light-gray;
     color: $color-input-text;
     height: 30px;
-    width: 80vw;
+    width: 60vw;
     border-radius: 5px;
     border: none;
-    margin: 10px;
+    margin: 10px 20px;
+    padding-left: 10px;
   }
 
+  .title{
+    color: $white;
+    padding: 20px;
+  }
 
-// .LoginStatus {
-//   background-color: $dark-gray;
-//   color: $white;
-//   height: 53px;
-//   font-size: 20px;
-//   padding-left: 10px;
-//   padding-top: 28px;
-//   font-weight: 200;
-// }
-//
-// .LogIn-btn {
-//   background-color: $green;
-//   color: $white;
-// }
-//
-// .message-field {
-//   width: 70vw;
-//   display: inline-block;
-// }
-//
-// .single-message{
-//   margin: 30px;
-// }
-//
-// .timestamp {
-//   margin: 10px;
-// }
-//
-// .user-list {
-//   background-color: $light-gray;
-//   width: 30vw;
-//   display: inline-block;
-//   height: 100vh;
-//   float: right;
-// }
-//
-//
-//
-//
-//
-//
-// .user-display {
-//   font-weight: bold;
-// }
-//
-// .title{
-//   color: $white;
-//   padding: 20px;
-// }
-//
-// .input-bar {
-//   background-color: $dark-blue;
-//   height: 53px;
-//   position: relative;
-// }
-// .filter-bar {
-//   background-color: $dark-blue;
-//   height: 53px;
-//   position: relative;
-// }
-//
-// #filter-input {
-//   position: relative;
-//   background-color: $light-gray;
-//   color: $dark-blue;
-//   height: 30px;
-//   width: 60vw;
-//   border-radius: 5px;
-//   left: 10px;
-//   top: 10px;
-//   border: none;
-//   font-size: 16px;
-//   padding-left: 15px;
-// }
-//
+.LoginStatus {
+  background-color: $color-login-status;
+  color: $white;
+  height: 40px;
+  font-size: 20px;
+  padding: 25px 0px 0px 20px;
+  font-weight: 150;
+}
 
-//
-// .timestamp {
-//   color: $purple;
-// }
-//
-// .username {
-//   color: $medium-blue;
-//   font-weight: bold;
-// }
-//
-// .message-content {
-//   color: $dark-blue;
-//   margin-left: 10px;
-// }
-//
-// ::-webkit-input-placeholder {
-//   color: $dark-blue;
-//   font-size: 16px;
-// }
-//
-// .character-count {
-//   color: $white;
-//   font-family: $main-text-family;
-//   position: absolute;
-//   left: 905px;
-//   top: 18px;
-// }
-//
-// #new-message--content {
-//   height: 100px;
-//   border: 1px dotted aliceblue;
-// }
-//
-// .message-field {
-//   display: inline-block;
-//   position: absolute;
-// }
+.message-field {
+  width: 70vw;
+  display: inline-block;
+}
+
+.single-message{
+  margin: 20px;
+}
+
+.timestamp {
+  margin-right: 20px;
+}
+
+.user-display {
+  font-weight: bold;
+}
+
+#user-list {
+  background-color: $light-gray;
+  width: 30vw;
+  height: 100vh;
+  float: right;
+  color: $white;
+}
+
+.timestamp {
+  color: $purple;
+}
+
+.username {
+  color: $medium-blue;
+  font-weight: bold;
+}
+
+.message-content {
+  color: $dark-blue;
+}
+
+::-webkit-input-placeholder {
+  color: $dark-blue;
+  font-size: 16px;
+}
+
+#new-message--content {
+  height: 100px;
+  border: 1px dotted aliceblue;
+}

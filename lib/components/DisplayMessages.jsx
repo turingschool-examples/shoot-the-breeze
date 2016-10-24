@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 
-const DisplayMessages = ({messages})=>{
+const DisplayMessages = ({messages, filteredMessage})=>{
+
+  // ShowFilteredMessages(){
+  //   if(this.props.filteredMessage > 0){
+  //     return filteredMessages;
+  //   }else{
+  //     return messages;
+  //   }
+  // }
+
     return(
       <ul className='message-field'>
         {messages.map(m =>{

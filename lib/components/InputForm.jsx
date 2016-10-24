@@ -25,7 +25,6 @@ export default class InputForm extends Component {
     const disabledSubmit = this.toggleSubmitBtn(draftedMessage);
     const disabledClear = this.toggleClearBtn(draftedMessage);
 
-
     return (
       <div className = "input-bar">
         <input id = "message-input"
