@@ -4,6 +4,21 @@ import { pick, map, extend } from 'lodash';
 import moment from 'moment';
 
 export default class FilterMessages extends Component {
+  constructor(){
+    super();
+    this.state ={
+      filteredMessage: []
+    };
+  }
+
+  UpdateFilteredState(user){
+    this.setState(
+      {filteredMessage: filter(this.state.messages, (message) => {
+        return message.user.displayName.includes(user);
+      })}
+    );
+  }
+
   FilterMessages(filteredMessage){
     if(filteredMessage.length > 0){
       return this
@@ -15,9 +30,8 @@ export default class FilterMessages extends Component {
 
     return (
       <div className = "filter-bar">
-        <span>Shoot the Breeze</span>
+        <span className = 'title'>Shoot the Breeze</span>
         <input id = "filter-input"
-          type = 'text'
           placeholder="Filter"
           onChange={(e) => {
             FilterMessages(e.target.value)}
