@@ -23,7 +23,7 @@ header {
     @include input-field;
   }
 
-  .buttons-container {
+  .buttons-container-header {
     bottom: 10px;
     right: 20px;
     position: absolute;
@@ -63,7 +63,7 @@ header {
       width: 80%;
     }
 
-    .buttons-container {
+    .buttons-container-header {
       bottom: 0;
       display: block;
       margin: 20px 0;

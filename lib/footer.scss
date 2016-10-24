@@ -106,6 +106,10 @@ footer {
       display: block;
     }
 
+    .submit-message-button, .clear-message-button {
+      display: inline-block;
+    }
+
   } //end of footer
 
 } //end of media query
