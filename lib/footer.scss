@@ -79,3 +79,21 @@ footer {
   }
 
 } //end of footer
+
+@media screen and (max-width: 800px) { /* for smartphones */
+
+  footer {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+
+    .footer-top-component {
+      display: none;
+    }
+
+  } //end of footer
+
+} //end of media query
