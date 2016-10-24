@@ -6,7 +6,7 @@ export default class UserList extends Component {
 
   get displayUsers() {
     let users = this.props.messages.map(m => {
-      return { userName: m.user.displayName, id:m.user.uid, email: m.user.email};
+      return { userName: m.user.displayName, id: m.user.uid, email: m.user.email};
     });
     var findUser = uniqBy(users, 'id');
     return sortedUniqBy(findUser, 'userName');
