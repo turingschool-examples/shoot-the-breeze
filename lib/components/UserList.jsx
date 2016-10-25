@@ -11,6 +11,7 @@ export default class UserList extends Component {
         email: m.user.email
       };
     });
+    
     var findUser = uniqBy(users, 'id');
     return sortedUniqBy(findUser, 'userName');
   }

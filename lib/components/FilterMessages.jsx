@@ -15,6 +15,17 @@ export default class FilterMessages extends Component {
           placeholder="Filter"
           onChange={(e) =>{onFilterChange(e.target.value)}}
         />
+
+        <span>
+          <button className='sort-btn'
+            id='up-btn'
+            onClick={this.props.sortMessages}>  Sort &uarr;
+          </button>
+          <button className='sort-btn'
+            id='down-btn'
+            onClick={this.props.sortMessages}>  Sort &darr;
+          </button>
+        </span>
       </div>
     );
   }

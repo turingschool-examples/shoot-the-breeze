@@ -6,12 +6,16 @@
   font-size: 18px;
 }
 
-.input-bar, .filter-bar {
+.InputForm, .FilterMessages {
   background-color: $color-header-footer-bar;
   height: 53px;
   @media screen and (max-width: $break){
     height: 2 * 53px;
   }
+}
+
+.sort-btn {
+  float: right;
 }
 
 .submit-btn, .clear-btn{
@@ -74,7 +78,7 @@
     background-color: $light-gray;
     color: $color-input-text;
     height: 30px;
-    width: 60vw;
+    width: 50vw;
     border-radius: 5px;
     border: none;
     margin: 10px 20px;
