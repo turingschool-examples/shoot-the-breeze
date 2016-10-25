@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i');
+
+
+$main-text-family: 'Fira Sans', sans-serif;
+$green: #2ecc71; //submit button
+$dark-blue: #34495E; //header bar, lots of text
+$light-blue: #3498DB; //sort button
+$light-gray:#bdc3c7;  //filter background
+$purple: #9b59b6; //date text
+$medium-blue: #2980b9;  //username
+$red: #d35400; //logged in status, clear button
+$dark-gray: #95a5a6; //logged-in bar
+$white: #fff;
+
+$color-header-footer-bar: $dark-blue;
+$color-submit-btn: $green;
+$color-clear-btn: $red;
+$color-input-text: $dark-blue;
+$color-login-status: $dark-gray;

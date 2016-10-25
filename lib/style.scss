@@ -1,12 +1,133 @@
-$wtf: #ff0080;
-$ridiculous: cursive;
+@import 'reset.scss';
+@import 'variables.scss';
 
-body {
-  background: $wtf;
+* {
+  font-family: $main-text-family;
+  font-size: 18px;
 }
 
-.hello-world {
-  font-family: $ridiculous;
+.input-bar, .filter-bar {
+  background-color: $color-header-footer-bar;
+  height: 53px;
+}
+
+.submit-btn, .clear-btn{
+  position: relative;
+  color: $white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  float: right;
+  margin: 10px;
+    &:disabled {
+      background-color: $light-gray;
+      color: $white;
+    }
+  }
+
+.LogOut-btn, .LogIn-btn {
+  color: $white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  float: right;
+  margin-right: 10px;
+}
+
+.submit-btn, .LogIn-btn{
+  background-color: $color-submit-btn;
+  margin-right: 10px;
+  &:hover {
+    color: $green;
+    background-color: $white;
+    }
+  }
+
+.clear-btn, .LogOut-btn{
+  background-color: $color-clear-btn;
+    &:hover {
+      color: $red;
+      background-color: $white;
+    }
+  }
+
+  .character-count {
+    color: $white;
+    margin: 30px;
+  }
+
+  #message-input, #filter-input{
+    background-color: $light-gray;
+    color: $color-input-text;
+    height: 30px;
+    width: 60vw;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 20px;
+    padding-left: 10px;
+  }
+
+  .title{
+    color: $white;
+    padding: 20px;
+  }
+
+.LoginStatus {
+  background-color: $color-login-status;
+  color: $white;
+  height: 40px;
+  font-size: 20px;
+  padding: 25px 0px 0px 20px;
+  font-weight: 150;
+}
+
+.user-display {
+  font-weight: bold;
+}
+
+.message-field {
+  width: 70vw;
+  display: inline-block;
+  height: 100vh;
+}
+
+.single-message{
+  margin: 20px;
+}
+
+.timestamp {
+  margin-right: 20px;
+}
+
+
+#user-list {
+  background-color: $light-gray;
+  width: 30vw;
+  height: 100vh;
+  float: right;
+  color: $white;
+}
+
+.timestamp {
+  color: $purple;
+}
+
+.username {
+  color: $medium-blue;
+  font-weight: bold;
+}
+
+.message-content {
+  color: $dark-blue;
+}
+
+::-webkit-input-placeholder {
+  color: $dark-blue;
+  font-size: 16px;
 }
 
 #new-message--content {
