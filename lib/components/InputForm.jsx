@@ -39,14 +39,14 @@ export default class InputForm extends Component {
         </span>
 
         <button
-          className= 'submit-btn'
-          disabled={disabledSubmit}
-          onClick={onMessageSubmit}>Submit</button>
-
-        <button
           className = 'clear-btn'
           disabled={disabledClear}
           onClick = {clearField}>Clear</button>
+          
+        <button
+          className= 'submit-btn'
+          disabled={disabledSubmit}
+          onClick={onMessageSubmit}>Submit</button>
       </div>
     );
   }

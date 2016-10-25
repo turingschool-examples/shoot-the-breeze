@@ -11,7 +11,7 @@
   height: 53px;
 }
 
-.submit-btn, .clear-btn, .LogIn-btn{
+.submit-btn, .clear-btn{
   position: relative;
   color: $white;
   border-radius: 5px;
@@ -27,7 +27,7 @@
     }
   }
 
-.submit-btn, .LogIn-btn{
+.submit-btn{
   background-color: $color-submit-btn;
   margin-right: 10px;
   &:hover {
@@ -74,9 +74,14 @@
   font-weight: 150;
 }
 
+.user-display {
+  font-weight: bold;
+}
+
 .message-field {
   width: 70vw;
   display: inline-block;
+  height: 100vh;
 }
 
 .single-message{
@@ -87,9 +92,6 @@
   margin-right: 20px;
 }
 
-.user-display {
-  font-weight: bold;
-}
 
 #user-list {
   background-color: $light-gray;
