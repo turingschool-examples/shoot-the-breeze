@@ -3,13 +3,6 @@ import firebase, { reference, signIn } from '../firebase';
 import { pick, map, extend } from 'lodash';
 
 export default class DisplayMessages extends Component {
-  
-
-  // if(filteredMessages > 0){
-  //   let messages = filteredMessages;
-  // }else{
-  //   return messages;
-  // }
 
   render(){
     const {messages} = this.props;
