@@ -53,6 +53,21 @@ body {
   color: $messageTimeStamp;
 }
 
+.messageWindow {
+  width: 60vw;
+height: 66vh;
+overflow: scroll;
+}
+
+.userList {
+  position: absolute;
+  right: 0;
+}
+
+.user-welcome-bar{
+  background-color: $loggedInBarBackground;
+}
+
 #new-message--content {
   height: 100px;
   border: 1px dotted aliceblue;
