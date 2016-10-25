@@ -16,6 +16,14 @@
 
 .sort-btn {
   float: right;
+  background-color: $color-sort-btn;
+  color: $white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  margin: 10px;
 }
 
 .submit-btn, .clear-btn{
@@ -124,10 +132,9 @@
   margin-right: 20px;
 }
 
-
 #user-list {
   background-color: $light-gray;
-  width: 30vw;
+  width: 29vw;
   height: 100vh;
   float: right;
   color: $color-input-text;

@@ -6,7 +6,7 @@ var _ = require('lodash');
 
 export default class FilterMessages extends Component {
   render(){
-    const {onFilterChange} = this.props;
+    const {onFilterChange, sortMessages} = this.props;
 
     return (
       <div className = "filter-bar">
@@ -19,11 +19,11 @@ export default class FilterMessages extends Component {
         <span>
           <button className='sort-btn'
             id='up-btn'
-            onClick={this.props.sortMessages}>  Sort &uarr;
+            onClick={sortMessages}>  Sort &uarr;
           </button>
           <button className='sort-btn'
             id='down-btn'
-            onClick={this.props.sortMessages}>  Sort &darr;
+            onClick={sortMessages}>  Sort &darr;
           </button>
         </span>
       </div>
