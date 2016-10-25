@@ -9,10 +9,12 @@
 .input-bar, .filter-bar {
   background-color: $color-header-footer-bar;
   height: 53px;
+  @media screen and (max-width: $break){
+    height: 2 * 53px;
+  }
 }
 
 .submit-btn, .clear-btn{
-  position: relative;
   color: $white;
   border-radius: 5px;
   border: none;
@@ -24,6 +26,11 @@
     &:disabled {
       background-color: $light-gray;
       color: $white;
+    }
+    @media screen and (max-width: $break){
+      float: none;
+      width: 30vw;
+      margin: 0px 30px 0px 0px;
     }
   }
 
@@ -58,6 +65,9 @@
   .character-count {
     color: $white;
     margin: 30px;
+    @media screen and (max-width: $break){
+      margin: 10px;
+    }
   }
 
   #message-input, #filter-input{
@@ -69,6 +79,9 @@
     border: none;
     margin: 10px 20px;
     padding-left: 10px;
+    @media screen and (max-width: $break){
+      width: 75vw;
+    }
   }
 
   .title{
@@ -83,6 +96,10 @@
   font-size: 20px;
   padding: 25px 0px 0px 20px;
   font-weight: 150;
+  @media screen and (max-width: $break){
+    width: 30vw;
+    margin: 0px 30px 0px 0px;
+  }
 }
 
 .user-display {
@@ -109,8 +126,16 @@
   width: 30vw;
   height: 100vh;
   float: right;
-  color: $white;
+  color: $color-input-text;
+  h3{
+    margin: 20px;
+    font-weight: bold;
+  }
+  li{
+    margin: 20px;
+  }
 }
+
 
 .timestamp {
   color: $purple;
