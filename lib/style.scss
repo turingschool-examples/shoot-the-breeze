@@ -27,7 +27,18 @@
     }
   }
 
-.submit-btn{
+.LogOut-btn, .LogIn-btn {
+  color: $white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  float: right;
+  margin-right: 10px;
+}
+
+.submit-btn, .LogIn-btn{
   background-color: $color-submit-btn;
   margin-right: 10px;
   &:hover {
@@ -36,7 +47,7 @@
     }
   }
 
-.clear-btn{
+.clear-btn, .LogOut-btn{
   background-color: $color-clear-btn;
     &:hover {
       color: $red;
