@@ -3,11 +3,8 @@ import React from 'react'
 import { shallow, mount, render } from 'enzyme'
 import { assert } from 'chai'
 
-let sinon = require('sinon')
-
 import Application from '../lib/components/Application'
 import MessageInput from '../lib/components/MessageInput'
-
 
 describe('Unit Test | Application', () => {
   it('can mount with no properties', () => {
