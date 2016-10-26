@@ -7,9 +7,10 @@ body {
 
 
 .filter-bar {
-  height: 20px;
+  height: 30px;
   background-color: $filterAndMessageInputBackground;
-  border-radius: 5px;
+  border-radius: 3px;
+  border: none;
 }
 
 ::-webkit-input-placeholder {
@@ -103,9 +104,10 @@ li {
   background-color: $loggedInBarBackground;
 }
 
-// .message-input-form {
-//   height: 30px;
-// }
+.message-input-form {
+  padding-top: 12px;
+  padding-left: 10px;
+}
 
 #new-message--content {
   height: 100px;
@@ -115,6 +117,16 @@ li {
 .message-input {
   display: inline-block;
   margin: 5px;
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  width: 700px;
+  background-color: $filterAndMessageInputBackground;
+}
+
+::-webkit-input-placeholder {
+  color: $headerBarAndMsgText;
+  font-size: 14px;
 }
 
 .char-counter {
@@ -135,13 +147,13 @@ li {
 .sign-in-button {
   position: absolute;
   right: 11px;
-  bottom: 26px;
+  bottom: 53px;
 }
 
 .sign-out-button {
   position: absolute;
   right: 11px;
-  bottom: 26px;
+  bottom: 54px;
 }
 
 .sign-in-button, .sign-out-button {
