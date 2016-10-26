@@ -4,16 +4,14 @@ import { shallow, mount, render } from 'enzyme'
 import { assert } from 'chai'
 
 import MessageInput from '../lib/components/MessageInput'
+import Application from '../lib/components/Application'
+
+const sinon = require('sinon')
 
 describe('Unit Test | MessageInput', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<MessageInput />)
   })
-  // it('calls componentDidMount', () => {
-  //   sinon.spy(MessageInput.prototype, 'componentDidMount')
-  //   const wrapper = mount(<MessageInput />)
-  //   expect(MessageInput.prototype.componentDidMount.calledOnce).to.equal(true)
-  // })
   it('renders a "submit-button"', () => {
     const wrapper = mount(<MessageInput />)
     assert(wrapper.find('.submit-button'))
@@ -26,13 +24,11 @@ describe('Unit Test | MessageInput', () => {
     const wrapper = shallow(<MessageInput />)
     assert.equal(wrapper.type(), 'form')
   })
-// ________
-  // it('simulates click events', () => {
-  //   const onButtonClick = sinon.spy()
-  //   const wrapper = shallow(<MessageInput />)
-  // })
-  //
-  //
+  it('renders xml elements', () => {
+    sinon.spy(MessageInput.prototype, 'render')
+    const wrapper = mount(<MessageInput />)
+    assert.equal(MessageInput.prototype.render.calledOnce, true)
+  })
 })
 
 describe('Feature Test | MessageInput', () => {
