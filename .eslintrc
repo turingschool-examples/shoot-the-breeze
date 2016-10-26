@@ -7,7 +7,7 @@
     "node": true
   },
   "rules": {
-    "quotes": [2, "single"],
+    "quotes": [2, "double"],
     "eol-last": [0],
     "no-mixed-requires": [0],
     "no-underscore-dangle": [0]
