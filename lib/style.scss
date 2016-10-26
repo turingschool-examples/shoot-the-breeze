@@ -41,6 +41,12 @@ body {
   outline: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
+  display: absolute;
+  z-index: 999999;
+}
+
+.users-text {
+  width: 10px;
 }
 
 
@@ -62,6 +68,8 @@ overflow: scroll;
 .userList {
   position: absolute;
   right: 0;
+  bottom: 700px;
+
 }
 
 .user-welcome-bar{
@@ -92,8 +100,22 @@ overflow: scroll;
   color: white;
 }
 
-.SubmitButton {
+.footer{
+  background-color: $headerBarAndMsgText;
+}
+
+.char-counter{
+  color: white;
+}
+.submit-button {
   margin: 5px;
+  background-color: $submitAndLoginButton;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .ClearButton {
