@@ -7,10 +7,13 @@ body {
 
 
 .filter-bar {
-  height: 30px;
-  background-color: $filterAndMessageInputBackground;
+  display: inline-block;
+  margin: 5px;
   border-radius: 3px;
   border: none;
+  height: 30px;
+  width: 350px;
+  background-color: $filterAndMessageInputBackground;
 }
 
 ::-webkit-input-placeholder {
@@ -52,7 +55,6 @@ button.sort-up, button.sort-down {
   box-shadow: none;
   -webkit-box-shadow: none;
   // position: absolute;
-  z-index: 999999;
 }
 
 .users-text {
@@ -81,14 +83,14 @@ p.users-text {
   font-weight: 800;
 }
 
-.userList {
+.user-list {
   background-color: #ECF0F1;
   position: absolute;
-  left: 560px;
+  left: 784px;
   top: 65px;
   padding: 13px;
   height: 750px;
-    width: 33.7%;
+  width: 35.8%;
 }
 
 li {
@@ -145,15 +147,15 @@ li {
 }
 
 .sign-in-button {
-  position: absolute;
-  right: 11px;
-  bottom: 53px;
+position: relative;
+left: 86%;
+bottom: 28px;
 }
 
 .sign-out-button {
-  position: absolute;
-  right: 11px;
-  bottom: 54px;
+  position: relative;
+  bottom: -15px;
+  left: 15px;
 }
 
 .sign-in-button, .sign-out-button {
