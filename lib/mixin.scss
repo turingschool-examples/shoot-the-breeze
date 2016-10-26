@@ -1,0 +1,61 @@
+@mixin button-display{
+  position: relative;
+  bottom: 49px;
+  height: 30px;
+  margin: 15px 10px 20px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: $sortButton;
+  border: none;
+  padding: 6px 10px 4px 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+@mixin button-style {
+margin: 5px;
+border: none;
+color: white;
+padding: 5px 13px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+font-weight: 300;
+border-radius: 3px;
+border-style: none;
+&:hover {
+  cursor: pointer;
+}
+}
+@mixin input-bar {
+  display: inline-block;
+  margin: 5px;
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  background-color: $filterAndMessageInputBackground;
+}
+@mixin userlist {
+  background-color: #ECF0F1;
+  position: absolute;
+  left: 784px;
+  top: 65px;
+  padding: 13px;
+  height: 750px;
+  width: 35.8%;
+}
+@mixin sign-in-button{
+  position: relative;
+  left: 86%;
+  bottom: 28px;
+}
+@mixin sign-out-button {
+  position: relative;
+  bottom: -15px;
+  left: 15px;
+}
