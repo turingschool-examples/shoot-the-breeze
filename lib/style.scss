@@ -1,9 +1,112 @@
 @import "variables";
 
+body {
+  font-family: $primary-font;
+  color: $headerBarAndMsgText;
+}
 
 
-.hello-world {
-  font-family: $ridiculous;
+.filter-bar {
+  height: 30px;
+  background-color: $filterAndMessageInputBackground;
+  border-radius: 3px;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: $headerBarAndMsgText;
+  font-size: 14px;
+}
+
+.header {
+  background-color: $headerBarAndMsgText;
+  // display: inline-block;
+  // width: 100vw;
+}
+.sort-buttons {
+  float: right;
+  // display: inline-block;
+}
+
+// .sort-newest-user {
+// }
+//
+// .sort-oldest-user {
+//   margin: 15px 5px 15px;
+//
+// }
+button.sort-up, button.sort-down {
+  position: relative;
+  bottom: 49px;
+  height: 30px;
+  margin: 15px 10px 20px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: $sortButton;
+  border: none;
+  padding: 6px 10px 4px 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  // position: absolute;
+  z-index: 999999;
+}
+
+.users-text {
+  width: 10px;
+}
+
+
+.user-name-on-message {
+  color: $messageSender;
+  margin-left: 10px;
+}
+
+.time-stamp {
+  color: $messageTimeStamp;
+}
+
+.messageWindow {
+  width: 60vw;
+  height: 790px;
+  overflow: scroll;
+  padding: 0 10px;
+  word-wrap: break-word;
+}
+
+p.users-text {
+  font-weight: 800;
+}
+
+.userList {
+  background-color: #ECF0F1;
+  position: absolute;
+  left: 560px;
+  top: 65px;
+  padding: 13px;
+  height: 750px;
+    width: 33.7%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.welcome-message {
+  padding: 16px 30px;
+  margin: -14px;
+}
+
+.user-welcome-bar {
+  background-color: $loggedInBarBackground;
+}
+
+.message-input-form {
+  padding-top: 12px;
+  padding-left: 10px;
 }
 
 #new-message--content {
@@ -11,32 +114,79 @@
   border: 1px dotted aliceblue;
 }
 
-.MessageInput {
+.message-input {
   display: inline-block;
   margin: 5px;
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  width: 700px;
+  background-color: $filterAndMessageInputBackground;
 }
 
-.CharacterCounter {
+::-webkit-input-placeholder {
+  color: $headerBarAndMsgText;
+  font-size: 14px;
+}
+
+.char-counter {
   display: inline-block;
   padding: 5px;
 }
 
-header {
-  background-color: $headerBar;
-}
-
-.title {
+.title{
   display: inline-block;
   padding: 0 25px;
-  color: white; 
- }
-
-.SubmitButton {
-  margin: 5px;
+  color: white;
 }
 
-.ClearButton {
+.footer{
+  background-color: $headerBarAndMsgText;
+}
+
+.sign-in-button {
+  position: absolute;
+  right: 11px;
+  bottom: 53px;
+}
+
+.sign-out-button {
+  position: absolute;
+  right: 11px;
+  bottom: 54px;
+}
+
+.sign-in-button, .sign-out-button {
+  background-color: $submitAndLogInOutButton
+}
+
+.char-counter{
+  color: white;
+}
+
+.submit-button {
+  background-color: $submitAndLogInOutButton;
+}
+
+.clear-button {
+  background-color: $clearButton;
+}
+
+button.sort-up, button.sort-down, .submit-button, .clear-button, .sign-in-button, .sign-out-button {
   margin: 5px;
+  border: none;
+  color: white;
+  padding: 5px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 3px;
+  border-style: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // colors

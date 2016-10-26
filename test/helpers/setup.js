@@ -16,3 +16,11 @@ global.document = require('jsdom').jsdom(`
 
 global.window = document.defaultView;
 global.navigator = window.navigator;
+
+// 
+// global.XMLHttpRequest = global.window.XMLHttpRequest;
+//
+// global.sinon = require(‘sinon’); global.sinon.useFakeXMLHttpRequest();
+//
+// global.window.XMLHttpRequest = global.XMLHttpRequest;
+// global.$ = require(‘jquery’)(global.window);
