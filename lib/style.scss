@@ -158,5 +158,6 @@ button.sort-up, button.sort-down, .submit-button, .clear-button, .sign-in-button
   }
   .user-list {
     @include user-list-MQ;
+    padding-left: 55px;
   }
 }
