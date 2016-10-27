@@ -43,7 +43,7 @@
 
 @mixin message-window {
   width: 55vw;
-  height: 790px;
+  height: 700px;
   overflow: scroll;
   padding: 0 10px;
   word-wrap: break-word;
@@ -53,15 +53,21 @@
 @mixin user-list {
   background-color: #ECF0F1;
   padding: 13px;
-  height: 750px;
-  width: 35.8%;
+  height: 700px;
+  width: 36.8%;
   display: inline-block;
 }
 
-@mixin sign-in-button{
-  position: relative;
-  left: 86%;
-  bottom: 28px;
+@mixin container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin sign-in-button {
+  // position: relative;
+  // left: 86%;
+  // bottom: 28px;
 }
 
 @mixin sign-out-button {
