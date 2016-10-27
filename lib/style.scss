@@ -1,16 +1,14 @@
 @import "variables";
+@import "mixin";
 
 body {
   font-family: $primary-font;
   color: $headerBarAndMsgText;
 }
 
-
 .filter-bar {
-  height: 30px;
-  background-color: $filterAndMessageInputBackground;
-  border-radius: 3px;
-  border: none;
+  @include input-bar;
+  width: 250px;
 }
 
 ::-webkit-input-placeholder {
@@ -20,45 +18,20 @@ body {
 
 .header {
   background-color: $headerBarAndMsgText;
-  // display: inline-block;
-  // width: 100vw;
-}
-.sort-buttons {
-  float: right;
-  // display: inline-block;
+  @include container-flex;
 }
 
-// .sort-newest-user {
-// }
-//
-// .sort-oldest-user {
-//   margin: 15px 5px 15px;
-//
-// }
+.sort-buttons {
+  float: right;
+}
+
 button.sort-up, button.sort-down {
-  position: relative;
-  bottom: 49px;
-  height: 30px;
-  margin: 15px 10px 20px 0;
-  font-size: 14px;
-  border-radius: 5px;
-  background-color: $sortButton;
-  border: none;
-  padding: 6px 10px 4px 10px;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  outline: 0;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  // position: absolute;
-  z-index: 999999;
+  @include button-display;
 }
 
 .users-text {
   width: 10px;
 }
-
 
 .user-name-on-message {
   color: $messageSender;
@@ -69,26 +42,28 @@ button.sort-up, button.sort-down {
   color: $messageTimeStamp;
 }
 
-.messageWindow {
-  width: 60vw;
-  height: 790px;
-  overflow: scroll;
-  padding: 0 10px;
-  word-wrap: break-word;
-}
-
 p.users-text {
   font-weight: 800;
 }
 
-.userList {
-  background-color: #ECF0F1;
-  position: absolute;
-  left: 560px;
-  top: 65px;
-  padding: 13px;
-  height: 750px;
-    width: 33.7%;
+// .message-window, .user-list {
+//
+// }
+
+.message-window {
+  @include message-window;
+}
+
+.user-list {
+  @include user-list;
+}
+
+.message-user-container {
+  @include container-flex;
+}
+
+.message-input-container {
+  @include container-flex;
 }
 
 li {
@@ -96,17 +71,24 @@ li {
 }
 
 .welcome-message {
-  padding: 16px 30px;
-  margin: -14px;
+  // padding: 16px 30px;
+  // margin: 5px;
 }
 
 .user-welcome-bar {
+  @include container-flex;
+  position: relative;
   background-color: $loggedInBarBackground;
 }
 
+.header, .user-welcome-bar, .message-input-form {
+  height: 60px;
+}
+
 .message-input-form {
-  padding-top: 12px;
-  padding-left: 10px;
+  @include container-flex;
+  // padding-top: 12px;
+  // padding-left: 10px;
 }
 
 #new-message--content {
@@ -115,13 +97,8 @@ li {
 }
 
 .message-input {
-  display: inline-block;
-  margin: 5px;
-  border-radius: 3px;
-  border: none;
-  height: 30px;
-  width: 700px;
-  background-color: $filterAndMessageInputBackground;
+  @include input-bar;
+  width: 300px;
 }
 
 ::-webkit-input-placeholder {
@@ -130,8 +107,8 @@ li {
 }
 
 .char-counter {
-  display: inline-block;
-  padding: 5px;
+  // display: inline-block;
+  // padding: 5px;
 }
 
 .title{
@@ -145,15 +122,11 @@ li {
 }
 
 .sign-in-button {
-  position: absolute;
-  right: 11px;
-  bottom: 53px;
+  @include sign-in-button;
 }
 
 .sign-out-button {
-  position: absolute;
-  right: 11px;
-  bottom: 54px;
+  @include sign-in-button;
 }
 
 .sign-in-button, .sign-out-button {
@@ -173,25 +146,18 @@ li {
 }
 
 button.sort-up, button.sort-down, .submit-button, .clear-button, .sign-in-button, .sign-out-button {
-  margin: 5px;
-  border: none;
-  color: white;
-  padding: 5px 13px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 3px;
-  border-style: none;
-  &:hover {
-    cursor: pointer;
-  }
+  @include button-style;
 }
 
-// colors
-// mixins
-// react-addons-test-utilsapp-temp
-// buttons
-// input-fields
-// typography
+@media (max-width: 711px) {
+  .message-user-container {
+    flex-direction: column;
+  }
+  .message-window {
+    @include message-window-MQ;
+  }
+  .user-list {
+    @include user-list-MQ;
+    padding-left: 55px;
+  }
+}
