@@ -6,11 +6,9 @@ body {
   color: $headerBarAndMsgText;
 }
 
-
 .filter-bar {
   @include input-bar;
   width: 350px;
-
 }
 
 ::-webkit-input-placeholder {
@@ -23,9 +21,11 @@ body {
   display: flex;
   align-items: center;
 }
+
 .sort-buttons {
   float: right;
 }
+
 button.sort-up, button.sort-down {
   @include button-display;
 }
@@ -33,7 +33,6 @@ button.sort-up, button.sort-down {
 .users-text {
   width: 10px;
 }
-
 
 .user-name-on-message {
   color: $messageSender;
@@ -44,12 +43,8 @@ button.sort-up, button.sort-down {
   color: $messageTimeStamp;
 }
 
-.messageWindow {
-  width: 60vw;
-  height: 790px;
-  overflow: scroll;
-  padding: 0 10px;
-  word-wrap: break-word;
+.message-window {
+  @include message-window;
 }
 
 p.users-text {
@@ -57,7 +52,7 @@ p.users-text {
 }
 
 .user-list {
-@include userlist;
+  @include user-list;
 }
 
 li {
@@ -110,11 +105,11 @@ li {
 }
 
 .sign-in-button {
-@include sign-in-button;
+  @include sign-in-button;
 }
 
 .sign-out-button {
-@include sign-in-button;
+  @include sign-in-button;
 }
 
 .sign-in-button, .sign-out-button {
@@ -134,5 +129,5 @@ li {
 }
 
 button.sort-up, button.sort-down, .submit-button, .clear-button, .sign-in-button, .sign-out-button {
-@include button-style;
+  @include button-style;
 }
