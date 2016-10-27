@@ -46,9 +46,9 @@ p.users-text {
   font-weight: 800;
 }
 
-.message-window, .user-list {
-  
-}
+// .message-window, .user-list {
+//
+// }
 
 .message-window {
   @include message-window;
@@ -147,4 +147,16 @@ li {
 
 button.sort-up, button.sort-down, .submit-button, .clear-button, .sign-in-button, .sign-out-button {
   @include button-style;
+}
+
+@media (max-width: 711px) {
+  .message-user-container {
+    flex-direction: column;
+  }
+  .message-window {
+    @include message-window-MQ;
+  }
+  .user-list {
+    @include user-list-MQ;
+  }
 }
